@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int x;
+    public int y;
+    public int z;
+    public int size;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Grid3D Grid = new Grid3D(x,y,z,size);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
