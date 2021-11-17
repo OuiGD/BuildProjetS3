@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid3D : MonoBehaviour
+public class Grid3D
 {
-    // Start is called before the first frame update
-    void Start()
+    private int gridX;
+    private int griY;
+    private int gridZ;
+    private float cubeSize;
+
+    public Grid3D(int gridX, int griY, int gridZ, float cubeSize)
     {
-        
+        this.gridX = gridX;
+        this.griY = griY;
+        this.gridZ = gridZ;
+        this.cubeSize = cubeSize;
     }
 
-    // Update is called once per frame
-    void Update()
+    public Vector3 GetWorldPosition(int x, int y, int z)
     {
-        
+        return new Vector3(x, y, z) * cubeSize;
     }
 }
