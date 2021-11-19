@@ -14,4 +14,7 @@ public class GridObject : ScriptableObject
     public List<int> Dimension;
     public int Fuel;
     public GameObject Module;
+
+    //public GridObject(int Poid, int Portance, int gridZ, float cubeSize)
+
 }
