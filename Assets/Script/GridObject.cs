@@ -10,6 +10,7 @@ public class GridObject : ScriptableObject
     public int Portance;
     public int Puissance;
     public int Consommation;
+    public int Capacite;
     public List<int> Dimension;
     public int Fuel;
     public GameObject Module;

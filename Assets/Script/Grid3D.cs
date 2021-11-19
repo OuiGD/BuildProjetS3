@@ -27,16 +27,16 @@ public class Grid3D
             {
                 for (int z = 0; z < gridArray.GetLength(2); z++)
                 {
-                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y + 1, z), Color.white, 100f);
-                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y, z + 1), Color.white, 100f);
-                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x + 1, y, z), Color.white, 100f);
+                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y + 1, z), Color.white, 100f);// hauteur
+                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y, z + 1), Color.white, 100f);// largeur
+                    Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x + 1, y, z), Color.white, 100f);// lngueur
                     //create a world text for debug
                 }
+
             }
         }
-        Debug.DrawLine(GetWorldPosition(0, griY, gridZ), GetWorldPosition(gridX + 1, griY, gridZ), Color.white, 100f);
-        Debug.DrawLine(GetWorldPosition(gridX, 0, gridZ), GetWorldPosition(gridX, griY + 1, gridZ), Color.white, 100f);
-        Debug.DrawLine(GetWorldPosition(gridX, griY, 0), GetWorldPosition(gridX, griY, gridZ + 1), Color.white, 100f);
+        //Debug.DrawLine(GetWorldPosition(gridX, griY, gridZ), GetWorldPosition(gridX + 1, griY, gridZ), Color.white, 100f);
+
     }
 
 
