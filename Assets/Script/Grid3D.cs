@@ -5,7 +5,7 @@ using UnityEngine;
 public class Grid3D
 {
     private int gridX;
-    private int griY;
+    private int gridY;
     private int gridZ;
     private float cubeSize;
     private int[,,] gridArray;
@@ -13,13 +13,13 @@ public class Grid3D
     {
         return new Vector3(x, y, z) * cubeSize;
     }
-    public Grid3D(int gridX, int griY, int gridZ, float cubeSize)
+    public Grid3D(int gridX, int gridY, int gridZ, float cubeSize)
     {
         this.gridX = gridX;
-        this.griY = griY;
+        this.gridY = gridY;
         this.gridZ = gridZ;
         this.cubeSize = cubeSize;
-        gridArray = new int[gridX, griY, gridZ];
+        gridArray = new int[gridX, gridY, gridZ];
 
         for (int x = 0; x < gridArray.GetLength(0); x++)
         {
@@ -35,10 +35,22 @@ public class Grid3D
 
             }
         }
-        //Debug.DrawLine(GetWorldPosition(gridX, griY, gridZ), GetWorldPosition(gridX + 1, griY, gridZ), Color.white, 100f);
 
     }
 
+    public bool canBuild(Vector3 pos)
+    {
+        Vector3 max = GetWorldPosition(gridX, gridY, gridZ);
+        if (((pos.x < max.x)&&(pos.y < max.y)&&(pos.z < max.z))||((pos.x > 0) && (pos.y > 0) && (pos.z >0)))
+        {
+            return true;
+        }
+        else
+        {
+            Debug.Log("tu peux pas construire ici");
+            return false;
+        }
+    }
 
     
 }
