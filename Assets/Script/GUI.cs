@@ -14,12 +14,9 @@ public class GUI : MonoBehaviour
         statBar.fillAmount=0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SelectionWheel(float x, float Axis)
     {
-        if (true)
-        {
-            carousel.transform.Rotate(new Vector3(0, 0, 1), 90f);
-        }
+        x = x * Axis;
+        carousel.transform.Rotate(new Vector3(0, 0, 1), x);
     }
 }
