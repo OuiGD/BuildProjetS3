@@ -11,27 +11,12 @@ public class GameManager : MonoBehaviour
     public List<GridObject> objDataBase;
     public GridObject curObject;
     private Grid3D Grid;
-    private Vector3 InitPos;
-    private Vector3 CurPos;
     // Start is called before the first frame update
     void Start()
     {
         Grid = new Grid3D(x,y,z,size);
         Instantiate(objDataBase[1].Module, new Vector3(x/2*size,y/ 2 * size, z/ 2 * size), Quaternion.identity);
 
-    }
-
-    private void OnMouseDown()
-    {
-        InitPos = Input.mousePosition;
-    }
-
-    private void OnMouseDrag()
-    {
-        float distance;
-        CurPos = Input.mousePosition;
-        distance = Vector3.Distance(CurPos,InitPos);
-        
     }
 
     void Update()
