@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/topmain.unity
     guid: 1cb71a0bd72f8cf45ac409e61c1da3dc
+  - enabled: 1
+    path: Assets/Scenes/Selecteur mission.unity
+    guid: ca83020da9205374faeb341af7657d88
+  - enabled: 1
+    path: Assets/Scenes/Hanger_contruction.unity
+    guid: f3f6a4722acd1e14599cdfe29c41c840
+  - enabled: 1
+    path: Assets/Scenes/Selecteur mission with contrat.unity
+    guid: f56a3889a8074cf4cb0eb28cc1e2ffd1
   m_configObjects: {}
