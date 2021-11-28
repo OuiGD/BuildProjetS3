@@ -39,18 +39,18 @@ public class Grid3D
         return new Vector3(x, y, z) * cubeSize;
     }
 
-    public void GetGridPosition(Vector3 position , out int x, out int y, out int z)
+    public void GetGridPosition(Vector3 position , out int px, out int py, out int pz)
     {
-        x = Mathf.FloorToInt(position.x / cubeSize);
-        y= Mathf.FloorToInt(position.y / cubeSize);
-        z = Mathf.FloorToInt(position.z / cubeSize);
+        px = Mathf.FloorToInt(position.x / cubeSize);
+        py = Mathf.FloorToInt(position.y / cubeSize);
+        pz = Mathf.FloorToInt(position.z / cubeSize);
     }
 
     public bool canBuild(int x, int y, int z)
     {
-        Vector3 max = GetWorldPosition(gridX, gridY, gridZ);
-        if (((x < max.x)&&(y < max.y)&&(z < max.z))||((x > 0) && (y > 0) && (z >0)))
+        if ((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0))
         {
+            Debug.Log(x + " " + y + " " + z);
             return true;
         }
         else

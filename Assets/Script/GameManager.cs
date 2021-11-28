@@ -31,19 +31,19 @@ public class GameManager : MonoBehaviour
             if (Physics.Raycast(ray,out pos))
             {
                 Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
-                Grid.GetGridPosition(coord, out int x, out int y, out int z);
+                Grid.GetGridPosition(coord, out int px, out int py, out int pz);
 
-                if (Grid.canBuild(x,y,z))
+                if (Grid.canBuild(px,py,pz))
                 {
-                    //Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
                 }
             }
             
         }
+    }
+
+}
 /*
-        using System.Collections;
-        using System.Collections.Generic;
-        using UnityEngine;
 
 public class GyroControl : MonoBehaviour
     {
@@ -86,6 +86,4 @@ public class GyroControl : MonoBehaviour
     }
 */
 
-    }
 
-}
