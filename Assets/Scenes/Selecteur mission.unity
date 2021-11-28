@@ -852,6 +852,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1626966962243278062, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962243278062, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962243278062, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 90.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962243278062, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962243278062, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59.899994
+      objectReference: {fileID: 0}
     - target: {fileID: 1626966962243278063, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -867,6 +887,22 @@ PrefabInstance:
     - target: {fileID: 1626966962243278063, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962399739073, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962399739073, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962399739073, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 90.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626966962399739073, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 1626966962399739074, guid: aa5610a8ee6ed2a4d82d28a670ead5f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
