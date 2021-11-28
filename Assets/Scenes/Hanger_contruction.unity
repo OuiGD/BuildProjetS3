@@ -415,6 +415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 418847752445184284, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 555.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3771883762178655115, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
