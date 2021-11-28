@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Grid = new Grid3D(x,y,z,size);
-        Instantiate(objDataBase[1].Module, new Vector3(x/2*size,y/ 2 * size, z/ 2 * size), Quaternion.identity);
+        Instantiate(objDataBase[0].Module, Grid.GetWorldPosition(((x-objDataBase[0].Dimension[0])/2),((y - objDataBase[0].Dimension[1])/2),((z - objDataBase[0].Dimension[2])/2)), Quaternion.identity);
 
     }
 
