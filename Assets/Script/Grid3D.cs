@@ -9,10 +9,7 @@ public class Grid3D
     private int gridZ;
     private float cubeSize;
     private int[,,] gridArray;
-    public Vector3 GetWorldPosition(int x, int y, int z)
-    {
-        return new Vector3(x, y, z) * cubeSize;
-    }
+ 
     public Grid3D(int gridX, int gridY, int gridZ, float cubeSize)
     {
         this.gridX = gridX;
@@ -37,11 +34,22 @@ public class Grid3D
         }
 
     }
+    public Vector3 GetWorldPosition(int x, int y, int z)
+    {
+        return new Vector3(x, y, z) * cubeSize;
+    }
 
-    public bool canBuild(Vector3 pos)
+    public void GetGridPosition(Vector3 position , out int x, out int y, out int z)
+    {
+        x = Mathf.FloorToInt(position.x / cubeSize);
+        y= Mathf.FloorToInt(position.y / cubeSize);
+        z = Mathf.FloorToInt(position.z / cubeSize);
+    }
+
+    public bool canBuild(int x, int y, int z)
     {
         Vector3 max = GetWorldPosition(gridX, gridY, gridZ);
-        if (((pos.x < max.x)&&(pos.y < max.y)&&(pos.z < max.z))||((pos.x > 0) && (pos.y > 0) && (pos.z >0)))
+        if (((x < max.x)&&(y < max.y)&&(z < max.z))||((x > 0) && (y > 0) && (z >0)))
         {
             return true;
         }

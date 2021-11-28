@@ -30,14 +30,61 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray,out pos))
             {
-                Vector3 coord = ray.origin+(ray.direction*pos.distance);// point de contact du ray avec le dodule / size + mathf.round
-                if (Grid.canBuild(coord))
+                Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
+                Grid.GetGridPosition(coord, out int x, out int y, out int z);
+
+                if (Grid.canBuild(x,y,z))
                 {
-                    Instantiate(objDataBase[1].Module, new Vector3(Mathf.Round(coord.x /size), Mathf.Round(coord.y / size), Mathf.Round(coord.z / size)), Quaternion.identity);
+                    //Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
                 }
             }
             
         }
+/*
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+public class GyroControl : MonoBehaviour
+    {
+        private bool gyroEnabled;
+        private Gyroscope gyro;
+
+        private GameObject cameraContainer;
+        private Quaternion rot;
+
+        private void Start()
+        {
+            cameraContainer = new GameObject("Camera Container");
+            cameraContainer.transform.position = transform.position;
+            transform.SetParent(cameraContainer.transform);
+
+            gyroEnabled = EnableGyro();
+        }
+
+        private bool EnableGyro()
+        {
+            if (SystemInfo.supportsGyroscope)
+            {
+                gyro = Input.gyro;
+                gyro.enabled = true;
+
+                cameraContainer.transform.rotation = Quaternion.Euler(90f, 90f, 0f);
+                rot = new Quaternion(0, 0, 1, 0);
+
+                return true;
+            }
+            return false;
+        }
+        private void Update()
+        {
+            if (gyroEnabled)
+            {
+                transform.localRotation = gyro.attitude * rot;
+            }
+        }
+    }
+*/
 
     }
 
