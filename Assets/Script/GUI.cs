@@ -6,36 +6,34 @@ using UnityEngine.UI;
 public class GUI : MonoBehaviour
 {
 
-    public Image statBar;
+    public Image statBarPoid;
+    public Image statBarCharge;
+    public Image statBarVitesse;
     public GameObject carousel;
 
     private Vector3 InitPos;
     private Vector3 CurPos;
-    private bool Open;
     private float distance;
+
+    private float Poid;
+    private float Dimention;
+    private float Vitesse;
+    private float Charge;
+    private float Distance;
+
     // Start is called before the first frame update
     void Start()
-    {  
-        statBar.fillAmount=0f;
-        Open = true;
+    {
+        Poid = 0f;
+        Dimention = 0f;
+        Vitesse = 0f;
+        Charge = 0f;
+        Distance = 0f;
+
+        statBarPoid.fillAmount= Poid;
+        statBarCharge.fillAmount = Charge;
+        statBarVitesse.fillAmount = Vitesse;
     }
-    
-
-    /********old method Section de secour***********/
-    /*private void OnMouseDown()
-    {
-        InitPos = Input.mousePosition;
-    }*/
-
-    /*private void OnMouseDrag()
-    {
-        float distance;
-        CurPos = Input.mousePosition;
-        distance = Vector3.Distance(CurPos, InitPos);
-        SelectionWheel(distance, Input.GetAxisRaw("Mouse Y"));
-
-    }*/
-    /********************************************/
 
     public void SelectionWheel(float x, float Axis)
     {
@@ -47,29 +45,21 @@ public class GUI : MonoBehaviour
         Debug.Log("lllollll");
     }
 
+
     private void Update()
     {
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            //Debug.Log("1er click");
+            InitPos = Input.mousePosition;
+        }
         if (Input.GetMouseButton(0))
         {
-            if (Open) {
-                //Debug.Log("1er click");
-                InitPos = Input.mousePosition;
-                Open = false;
-            }
-            else
-            {
-                //Debug.Log("ça drag");
-                CurPos = Input.mousePosition;
-                distance = Vector3.Distance(CurPos, InitPos);
-                SelectionWheel(distance, Input.GetAxisRaw("Mouse Y"));
-            }
-            
-        }
-
-        if (Input.GetMouseButtonUp(0) && !Open)
-        {
-            Open = true;
+            //Debug.Log("ça drag");
+            CurPos = Input.mousePosition;
+            distance = Vector3.Distance(CurPos, InitPos);
+            SelectionWheel(distance, Input.GetAxisRaw("Mouse Y"));
         }
     }
 }

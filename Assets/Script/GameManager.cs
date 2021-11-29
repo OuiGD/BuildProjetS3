@@ -10,15 +10,25 @@ public class GameManager : MonoBehaviour
     public int size;
     public List<GridObject> objDataBase;
     public GridObject curObject;
+
     private Grid3D Grid;
+    private Vector3 Invert;
+    private int midle;
+    private GameObject Modul;
+
     // Start is called before the first frame update
     void Start()
     {
+        Invert = new Vector3(-1f, 1f, 1f);
         Grid = new Grid3D(x,y,z,size);
         Instantiate(objDataBase[0].Module, Grid.GetWorldPosition(((x-objDataBase[0].Dimension[0])/2),((y - objDataBase[0].Dimension[1])/2),((z - objDataBase[0].Dimension[2])/2)), Quaternion.identity);
-
+        midle = x/2;
     }
 
+    /*void DestroyGameObject()
+    {
+        Destroy();
+    }*/
     void Update()
     {
 
@@ -31,59 +41,22 @@ public class GameManager : MonoBehaviour
             if (Physics.Raycast(ray,out pos))
             {
                 Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
-                Grid.GetGridPosition(coord, out int px, out int py, out int pz);
+                Grid.GetGridPosition(coord, out int x, out int y, out int z);
 
-                if (Grid.canBuild(px,py,pz))
+                if (Grid.canBuild(x,y,z))
                 {
-                    Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    if (x < midle)
+                    {
+                        Modul.transform.localScale = Invert;
+                    }
+                    
                 }
-            }
-            
+            }            
         }
     }
 
 }
-/*
 
-public class GyroControl : MonoBehaviour
-    {
-        private bool gyroEnabled;
-        private Gyroscope gyro;
-
-        private GameObject cameraContainer;
-        private Quaternion rot;
-
-        private void Start()
-        {
-            cameraContainer = new GameObject("Camera Container");
-            cameraContainer.transform.position = transform.position;
-            transform.SetParent(cameraContainer.transform);
-
-            gyroEnabled = EnableGyro();
-        }
-
-        private bool EnableGyro()
-        {
-            if (SystemInfo.supportsGyroscope)
-            {
-                gyro = Input.gyro;
-                gyro.enabled = true;
-
-                cameraContainer.transform.rotation = Quaternion.Euler(90f, 90f, 0f);
-                rot = new Quaternion(0, 0, 1, 0);
-
-                return true;
-            }
-            return false;
-        }
-        private void Update()
-        {
-            if (gyroEnabled)
-            {
-                transform.localRotation = gyro.attitude * rot;
-            }
-        }
-    }
-*/
 
 

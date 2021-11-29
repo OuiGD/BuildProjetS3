@@ -39,18 +39,18 @@ public class Grid3D
         return new Vector3(x, y, z) * cubeSize;
     }
 
-    public void GetGridPosition(Vector3 position , out int px, out int py, out int pz)
+    public void GetGridPosition(Vector3 position , out int x, out int y, out int z)
     {
-        px = Mathf.FloorToInt(position.x / cubeSize);
-        py = Mathf.FloorToInt(position.y / cubeSize);
-        pz = Mathf.FloorToInt(position.z / cubeSize);
+        x = Mathf.FloorToInt(position.x / cubeSize);
+        y = Mathf.FloorToInt(position.y / cubeSize);
+        z = Mathf.FloorToInt(position.z / cubeSize);
     }
-
+    
     public bool canBuild(int x, int y, int z)
     {
         if ((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0))
         {
-            Debug.Log(x + " " + y + " " + z);
+            Debug.Log("x: "+ x + " /y: " + y + " /z: " + z);
             return true;
         }
         else
@@ -59,6 +59,5 @@ public class Grid3D
             return false;
         }
     }
-
     
 }
