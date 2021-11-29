@@ -49,10 +49,11 @@ public class GameManager : MonoBehaviour
                     if (x < midle)
                     {
                         Modul.transform.localScale = Invert;
+                        Grid.ObjInGrid(x, y, z, curObject.Dimension,-1);
                     }
                     else
                     {
-
+                        Grid.ObjInGrid(x, y, z, curObject.Dimension,1);
                     }
                     
                 }
