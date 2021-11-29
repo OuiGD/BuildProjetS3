@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GUI : MonoBehaviour
 {
-
+    
     public Image statBarPoid;
     public Image statBarCharge;
     public Image statBarVitesse;
@@ -29,7 +29,7 @@ public class GUI : MonoBehaviour
         Vitesse = 0f;
         Charge = 0f;
         Distance = 0f;
-
+        
         statBarPoid.fillAmount= Poid;
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
@@ -43,6 +43,95 @@ public class GUI : MonoBehaviour
     public void BoutonTest()
     {
         Debug.Log("lllollll");
+    }
+
+    //cette fonction valide les missions
+    public void Bouton_validation(float mission_poid, bool poid_greater_than, float mission_charge, bool charge_greater_than, float vitesse_max, bool vitesse_greater_than)
+    {
+        //le jeu va vérifier si le poid de l'avion correspond à la mission
+        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        if(poid_greater_than)
+        {
+            //dans le cas ou le joueur ne doit pas dépasser un poid
+            if (mission_poid > Poid)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
+        else
+        {
+            //dans le cas ou le joueur doit excéder un poid
+            if (mission_poid < Poid)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
+
+        //############
+
+        //le jeu va vérifier si la capacité de charge de l'avion correspond à la mission
+        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        if (charge_greater_than)
+        {
+            //dans le cas ou le joueur ne doit pas dépasser la capacité
+            if (mission_charge > Charge)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
+        else
+        {
+            //dans le cas ou le joueur doit excéder la capacité
+            if (mission_charge < Charge)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
+
+        //############
+
+        //le jeu va vérifier si la vitesse de l'avion correspond à la mission
+        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        if (vitesse_greater_than)
+        {
+            //dans le cas ou le joueur ne doit pas dépasser la vitesse
+            if (vitesse_max > Vitesse)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
+        else
+        {
+            //dans le cas ou le joueur doit excéder la vitesse
+            if (vitesse_max < Vitesse)
+            {
+                Debug.Log("gagné");
+            }
+            else
+            {
+                Debug.Log("perdu");
+            }
+        }
     }
 
 

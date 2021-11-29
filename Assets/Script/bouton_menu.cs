@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class bouton_menu : MonoBehaviour
 {
+    private Mission mission;
+    private GUI gui;
+
+    void start()
+    {
+        mission = new Mission(1);
+    }
+
     public void OnbuttonPress()
     {
         //renvoie au selecteur de mission
@@ -41,8 +49,15 @@ public class bouton_menu : MonoBehaviour
         SceneManager.LoadScene("Main_Menu");
     }
 
+    public void Boutton_mission()
+    {
+        mission.LaunchMission1();
+
+    }
+
     public void validation()
     {
         //pour l'instant, ce boutton ne fais rien, mais il servira à valider les missions
+        gui.Bouton_validation(mission.Objectif_poid, mission.Excedant_poid, mission.Objectif_Charge, mission.Excedant_Charge, mission.Objectif_Vitesse, mission.Excedant_Vitesse);
     }
 }
