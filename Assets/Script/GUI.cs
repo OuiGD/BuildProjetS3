@@ -49,14 +49,14 @@ public class GUI : MonoBehaviour
     //cette fonction valide les missions
     public void Bouton_validation(float mission_poid, bool poid_greater_than, float mission_charge, bool charge_greater_than, float vitesse_max, bool vitesse_greater_than)
     {
-        //le jeu va vérifier si le poid de l'avion correspond à la mission
-        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        //le jeu va vï¿½rifier si le poid de l'avion correspond ï¿½ la mission
+        //ce "if" vï¿½rifie si le joueur doit avoir une valeur plus petit ou plus grande.
         if(poid_greater_than)
         {
-            //dans le cas ou le joueur ne doit pas dépasser un poid
+            //dans le cas ou le joueur ne doit pas dï¿½passer un poid
             if (mission_poid > Poid)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -65,10 +65,10 @@ public class GUI : MonoBehaviour
         }
         else
         {
-            //dans le cas ou le joueur doit excéder un poid
+            //dans le cas ou le joueur doit excï¿½der un poid
             if (mission_poid < Poid)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -78,14 +78,14 @@ public class GUI : MonoBehaviour
 
         //############
 
-        //le jeu va vérifier si la capacité de charge de l'avion correspond à la mission
-        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        //le jeu va vï¿½rifier si la capacitï¿½ de charge de l'avion correspond ï¿½ la mission
+        //ce "if" vï¿½rifie si le joueur doit avoir une valeur plus petit ou plus grande.
         if (charge_greater_than)
         {
-            //dans le cas ou le joueur ne doit pas dépasser la capacité
+            //dans le cas ou le joueur ne doit pas dï¿½passer la capacitï¿½
             if (mission_charge > Charge)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -94,10 +94,10 @@ public class GUI : MonoBehaviour
         }
         else
         {
-            //dans le cas ou le joueur doit excéder la capacité
+            //dans le cas ou le joueur doit excï¿½der la capacitï¿½
             if (mission_charge < Charge)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -107,14 +107,14 @@ public class GUI : MonoBehaviour
 
         //############
 
-        //le jeu va vérifier si la vitesse de l'avion correspond à la mission
-        //ce "if" vérifie si le joueur doit avoir une valeur plus petit ou plus grande.
+        //le jeu va vï¿½rifier si la vitesse de l'avion correspond ï¿½ la mission
+        //ce "if" vï¿½rifie si le joueur doit avoir une valeur plus petit ou plus grande.
         if (vitesse_greater_than)
         {
-            //dans le cas ou le joueur ne doit pas dépasser la vitesse
+            //dans le cas ou le joueur ne doit pas dï¿½passer la vitesse
             if (vitesse_max > Vitesse)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -123,10 +123,10 @@ public class GUI : MonoBehaviour
         }
         else
         {
-            //dans le cas ou le joueur doit excéder la vitesse
+            //dans le cas ou le joueur doit excï¿½der la vitesse
             if (vitesse_max < Vitesse)
             {
-                Debug.Log("gagné");
+                Debug.Log("gagnï¿½");
             }
             else
             {
@@ -146,7 +146,7 @@ public class GUI : MonoBehaviour
         }
         if (Input.GetMouseButton(0))
         {
-            //Debug.Log("ça drag");
+            //Debug.Log("ï¿½a drag");
             CurPos = Input.mousePosition;
             distance = Vector3.Distance(CurPos, InitPos);
             SelectionWheel(distance, Input.GetAxisRaw("Mouse Y"));

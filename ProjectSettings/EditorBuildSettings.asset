@@ -5,22 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: 9f6f52cf2f84d2f439ab8a02bf57ef76
   - enabled: 1
     path: Assets/Scenes/test.unity
     guid: a3de3f1c0779e6549bfafe6844486b1f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/topmain.unity
     guid: 1cb71a0bd72f8cf45ac409e61c1da3dc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Selecteur mission.unity
     guid: ca83020da9205374faeb341af7657d88
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Selecteur mission with contrat.unity
     guid: f56a3889a8074cf4cb0eb28cc1e2ffd1
+  - enabled: 1
+    path: Assets/Scenes/Hanger_contruction.unity
+    guid: 6317bd92c8b0dc849939d3fb9bff6c9c
   m_configObjects: {}
