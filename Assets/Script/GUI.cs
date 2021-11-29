@@ -11,10 +11,11 @@ public class GUI : MonoBehaviour
     public Image statBarVitesse;
     public GameObject carousel;
 
+
     private Vector3 InitPos;
     private Vector3 CurPos;
+    
     private float distance;
-
     private float Poid;
     private float Dimention;
     private float Vitesse;

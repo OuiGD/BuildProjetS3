@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class bouton_menu : MonoBehaviour
 {
-    private Mission mission;
+    /*private Mission mission;
     private GUI gui;
 
     void start()
@@ -59,5 +59,5 @@ public class bouton_menu : MonoBehaviour
     {
         //pour l'instant, ce boutton ne fais rien, mais il servira à valider les missions
         gui.Bouton_validation(mission.Objectif_poid, mission.Excedant_poid, mission.Objectif_Charge, mission.Excedant_Charge, mission.Objectif_Vitesse, mission.Excedant_Vitesse);
-    }
+    }*/
 }

@@ -33,12 +33,15 @@ public class GyroControler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
-        /*if (gyroEnabled)
+    {       
+        if (gyroEnabled)
         {
-            Maincamera.transform.RotateAround(target.transform.position, gyro.attitude.eulerAngles, 20 * Time.deltaTime);// gyro.attitude * rot;
-        }*/
+            target.transform.localRotation = gyro.attitude * rot;
+        }
+        else
+        {
+            Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
+        }
     }
 }
 

@@ -50,6 +50,10 @@ public class GameManager : MonoBehaviour
                     {
                         Modul.transform.localScale = Invert;
                     }
+                    else
+                    {
+
+                    }
                     
                 }
             }            
@@ -57,6 +61,3 @@ public class GameManager : MonoBehaviour
     }
 
 }
-
-
-

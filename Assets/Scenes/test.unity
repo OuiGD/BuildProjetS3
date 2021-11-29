@@ -249,12 +249,7 @@ MonoBehaviour:
   y: 5
   z: 10
   size: 30
-  objDataBase:
-  - {fileID: 11400000, guid: 802ba41fc1ede0247a0731dec00ca05a, type: 2}
-  - {fileID: 11400000, guid: 44581a348a4ca3448aa9a5cd2c491507, type: 2}
-  - {fileID: 11400000, guid: 2130716bf1f00d6429a5d3dd4a92e05d, type: 2}
-  - {fileID: 11400000, guid: 8e5cbefcf88a632408d1905796b2602b, type: 2}
-  - {fileID: 11400000, guid: 20d4b7dea5ebb8244925d6bb6c5eb0a5, type: 2}
+  objDataBase: []
   curObject: {fileID: 11400000, guid: 802ba41fc1ede0247a0731dec00ca05a, type: 2}
 --- !u!4 &856300384
 Transform:
