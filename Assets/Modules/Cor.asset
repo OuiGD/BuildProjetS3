@@ -18,6 +18,6 @@ MonoBehaviour:
   Puissance: 0
   Consommation: 0
   Capacite: 700
-  Dimension: 020000000200000003000000
+  Dimension: 010000000100000005000000
   Fuel: 0
-  Module: {fileID: 4910067660595157923, guid: 622901139160e344da8dd40986d49b6e, type: 3}
+  Module: {fileID: 5573507513231267609, guid: 6a0daeb660390e14cbc8d538291f7951, type: 3}

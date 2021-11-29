@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc0229d2a1f45034bb90b5752d3c6614, type: 3}
-  m_Name: Aille
+  m_Name: Aile2
   m_EditorClassIdentifier: 
-  Name: Avion
-  Poid: 4
-  Portance: 83
+  Name: Aile2
+  Poid: 2
+  Portance: 30
   Puissance: 0
   Consommation: 0
   Capacite: 0
-  Dimension: 010000000100000006000000
+  Dimension: 
   Fuel: 0
-  Module: {fileID: 3581066600872517018, guid: 976cf0d7398e9124db641ca974773d77, type: 3}
+  Module: {fileID: 3257714957940466238, guid: 49c14c1d7b4f39140a5f4a9109c6aff6, type: 3}

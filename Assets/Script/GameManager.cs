@@ -10,14 +10,25 @@ public class GameManager : MonoBehaviour
     public int size;
     public List<GridObject> objDataBase;
     public GridObject curObject;
+
     private Grid3D Grid;
+    private Vector3 Invert;
+    private int midle;
+    private GameObject Modul;
+
     // Start is called before the first frame update
     void Start()
     {
+        Invert = new Vector3(-1f, 1f, 1f);
         Grid = new Grid3D(x,y,z,size);
-        Instantiate(objDataBase[1].Module, new Vector3(x/2*size,y/ 2 * size, z/ 2 * size), Quaternion.identity);
-
+        Instantiate(objDataBase[0].Module, Grid.GetWorldPosition(((x-objDataBase[0].Dimension[0])/2),((y - objDataBase[0].Dimension[1])/2),((z - objDataBase[0].Dimension[2])/2)), Quaternion.identity);
+        midle = x/2;
     }
+
+    /*void DestroyGameObject()
+    {
+        Destroy();
+    }*/
     void Update()
     {
 
@@ -26,15 +37,26 @@ public class GameManager : MonoBehaviour
         {
             RaycastHit pos;
             Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray,out pos))
             {
-                Vector3 coord = ray.origin+(ray.direction*pos.distance);// point de contact du ray avec le dodule / size + mathf.round
-                if (Grid.canBuild(coord))
+                Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
+                Grid.GetGridPosition(coord, out int x, out int y, out int z);
+
+                if (Grid.canBuild(x,y,z))
                 {
-                    Instantiate(objDataBase[1].Module, new Vector3(Mathf.Round(coord.x /size), Mathf.Round(coord.y / size), Mathf.Round(coord.z / size)), Quaternion.identity);
+                    Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    if (x < midle)
+                    {
+                        Modul.transform.localScale = Invert;
+                    }
+                    
                 }
-            }
-            
+            }            
         }
     }
+
 }
+
+
+
