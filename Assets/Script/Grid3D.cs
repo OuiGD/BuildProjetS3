@@ -45,7 +45,21 @@ public class Grid3D
         y = Mathf.FloorToInt(position.y / cubeSize);
         z = Mathf.FloorToInt(position.z / cubeSize);
     }
-    
+
+    public void ObjInGrid(int x, int y, int z, List<int> dim, int pas)
+    {
+        for (int i = 0; x < dim[0]; i++)
+        {
+            for (int j = 0; y < dim[1]; i++)
+            {
+                for (int k = 0; z < dim[2]; i++)
+                {
+                    gridArray[x+(i*pas), y+(j*pas), z+(k*pas)] = 1;
+                }
+            }
+        }
+    }
+
     public bool canBuild(int x, int y, int z)
     {
         if ((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0))
