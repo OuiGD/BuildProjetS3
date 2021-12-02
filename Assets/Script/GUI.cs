@@ -22,6 +22,10 @@ public class GUI : MonoBehaviour
     private float Charge;
     private float Distance;
 
+    const float FACTOR_POID = 1.40f;
+    const float FACTOR_PUISSANCE = 0.10f;
+    const float FACTOR_PORTANCE = 0.25f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +35,7 @@ public class GUI : MonoBehaviour
         Charge = 0f;
         Distance = 0f;
         
-        statBarPoid.fillAmount= Poid;
+        statBarPoid.fillAmount = Poid;
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
     }
@@ -41,9 +45,10 @@ public class GUI : MonoBehaviour
         carousel.transform.Rotate(new Vector3(0, 0, 1), (Mathf.Sqrt(x)*-Axis));
     }
 
-    public void BoutonTest()
+    public void StatsUpdate(GridObject objAjout)
     {
         Debug.Log("lllollll");
+
     }
 
     //cette fonction valide les missions

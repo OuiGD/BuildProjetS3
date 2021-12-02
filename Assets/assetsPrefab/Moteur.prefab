@@ -29,10 +29,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15, y: 15, z: 15}
   m_LocalScale: {x: 30, y: 30, z: 30}
-  m_Children:
-  - {fileID: 6093467670773497689}
+  m_Children: []
   m_Father: {fileID: 9057301571752186241}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2947316936117409799
 MeshFilter:
@@ -61,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,6 +122,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6093467670773497689}
   - {fileID: 4858233777983397470}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -132,7 +132,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4858233777983397470}
+    m_TransformParent: {fileID: 9057301571752186241}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_RootOrder
@@ -140,27 +140,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.03333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03333333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.33333334
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -193,6 +193,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
       propertyPath: m_Name
       value: moteur_radial_ww1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9612226a3afd8a04cbf4fcd40874b5f5, type: 3}

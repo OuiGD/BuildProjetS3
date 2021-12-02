@@ -39,11 +39,11 @@ public class Grid3D
         return new Vector3(x, y, z) * cubeSize;
     }
 
-    public void GetGridPosition(Vector3 position , out int x, out int y, out int z)
+    public void GetGridPosition(Vector3 position , out int px, out int py, out int pz)
     {
-        x = Mathf.FloorToInt(position.x / cubeSize);
-        y = Mathf.FloorToInt(position.y / cubeSize);
-        z = Mathf.FloorToInt(position.z / cubeSize);
+        px = Mathf.FloorToInt(position.x / cubeSize);
+        py = Mathf.FloorToInt(position.y / cubeSize);
+        pz = Mathf.FloorToInt(position.z / cubeSize);
     }
 
     public void ObjInGrid(int x, int y, int z, List<int> dim, int pas)
