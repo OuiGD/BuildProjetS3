@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
     {
         Destroy();
     }*/
+
+    public void selectObject(int ID)
+    {
+        curObject = objDataBase[ID];
+    }
     void Update()
     {
 
