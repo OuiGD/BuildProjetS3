@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GUI : MonoBehaviour
 {
-    
+
     public Image statBarPoid;
     public Image statBarCharge;
     public Image statBarVitesse;
@@ -14,17 +14,23 @@ public class GUI : MonoBehaviour
 
     private Vector3 InitPos;
     private Vector3 CurPos;
-    
     private float distance;
+
     private float Poid;
     private float Dimention;
     private float Vitesse;
     private float Charge;
     private float Distance;
+    private float Portance;
+    private float Puissance;
 
     const float FACTOR_POID = 1.40f;
     const float FACTOR_PUISSANCE = 0.10f;
     const float FACTOR_PORTANCE = 0.25f;
+    const float POID_MAX = 1000;
+    const float CHARGE_MAX = 1000;
+    const float VITESSE_MAX = 1000;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +40,9 @@ public class GUI : MonoBehaviour
         Vitesse = 0f;
         Charge = 0f;
         Distance = 0f;
-        
+        Portance = 0f;
+        Puissance = 0f;
+
         statBarPoid.fillAmount = Poid;
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
@@ -42,13 +50,18 @@ public class GUI : MonoBehaviour
 
     public void SelectionWheel(float x, float Axis)
     {
-        carousel.transform.Rotate(new Vector3(0, 0, 1), (Mathf.Sqrt(x)*-Axis));
+        carousel.transform.Rotate(new Vector3(0, 0, 1), ((Mathf.Sqrt(x) * -Axis)/2));
     }
 
-    public void StatsUpdate(GridObject objAjout)
+    public void StatsBarUpdate(GridObject objAjout)
     {
         Debug.Log("lllollll");
-
+        Poid += (float)objAjout.Poid;
+        Puissance += (float)objAjout.Puissance;
+        Portance += (float)objAjout.Portance;
+        statBarPoid.fillAmount = Poid/ POID_MAX;
+        statBarVitesse.fillAmount = ((Puissance- Poid)*(Portance* Mathf.Pow(FACTOR_PORTANCE,2))) / VITESSE_MAX;
+        statBarCharge.fillAmount = ((Portance* FACTOR_PORTANCE)+(Puissance*FACTOR_PUISSANCE) -(Poid* FACTOR_POID)) / CHARGE_MAX;
     }
 
     //cette fonction valide les missions

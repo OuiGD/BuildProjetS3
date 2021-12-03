@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int size;
     public List<GridObject> objDataBase;
     public GridObject curObject;
+    public GUI gui;
 
     private Grid3D Grid;
     private Vector3 Invert;
@@ -51,7 +52,8 @@ public class GameManager : MonoBehaviour
                 if (Grid.canBuild(x,y,z))
                 {
                     Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
-                    if (x < midle)
+                    gui.StatsBarUpdate(curObject);
+                    if (x < midle && curObject.Name == "Aile")
                     {
                         Modul.transform.localScale = Invert;
                         Grid.ObjInGrid(x, y, z, curObject.Dimension,-1);
