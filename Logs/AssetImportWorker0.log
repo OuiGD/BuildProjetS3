@@ -904,3 +904,4 @@ Received Import Request.
 Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal_OpenGL.tga using Guid(3ae4b35b0655ce44ea183c15bda8e58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f14308f1f1cb8f70f2d4ca8e0128d52') in 0.014221 seconds 
   Import took 0.020716 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
