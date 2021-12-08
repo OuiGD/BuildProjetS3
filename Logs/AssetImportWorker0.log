@@ -15,11 +15,11 @@ C:/Users/game2/Documents/GitHub/BuildProjetS3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50809
+50483
 Successfully changed project path to: C:/Users/game2/Documents/GitHub/BuildProjetS3
 C:/Users/game2/Documents/GitHub/BuildProjetS3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 63.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001333 seconds.
+Registered in 0.001324 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.687 seconds
+- Completed reload, in  0.766 seconds
 Domain Reload Profiling:
-	ReloadAssembly (688ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (766ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (513ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
+			SetupTypeCache (207ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (204ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (251ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (74ms)
-				BeforeProcessingInitializeOnLoad (25ms)
-				ProcessInitializeOnLoadAttributes (76ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005729 seconds.
+Registered in 0.004239 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 99.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 84.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.315 seconds
+- Completed reload, in  1.372 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1318ms)
-		BeginReloadAssembly (181ms)
+	ReloadAssembly (1373ms)
+		BeginReloadAssembly (167ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1082ms)
-			LoadAssemblies (123ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1150ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
+			SetupTypeCache (400ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (442ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (451ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3133 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
+System memory in use before: 140.5 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3567.
-Total: 4.218000 ms (FindLiveObjects: 0.399900 ms CreateObjectMapping: 0.185000 ms MarkObjects: 3.508900 ms  DeleteObjects: 0.122700 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3568.
+Total: 7.679800 ms (FindLiveObjects: 0.572700 ms CreateObjectMapping: 0.377100 ms MarkObjects: 6.533600 ms  DeleteObjects: 0.194300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,25 +131,776 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(a36fde982f8793b4c8c69f0202926067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(a36fde982f8793b4c8c69f0202926067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bce568fe4e9f7b0feb653fa9e003454') in 0.008683 seconds 
-  Import took 0.013758 seconds .
+  path: Assets/Scenes/Prefab.unity
+  artifactKey: Guid(e053944a58a6a6648a736bfc2d782c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prefab.unity using Guid(e053944a58a6a6648a736bfc2d782c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c243eb8646a418075c579dc38a02818') in 0.019353 seconds 
+  Import took 0.027759 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.834953 seconds.
-  path: Assets/Scenes/Selecteur mission with contrat.unity
-  artifactKey: Guid(f56a3889a8074cf4cb0eb28cc1e2ffd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Selecteur mission with contrat.unity using Guid(f56a3889a8074cf4cb0eb28cc1e2ffd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511b08f46afd50f14074cf4098375db0') in 0.016177 seconds 
-  Import took 0.023793 seconds .
+  Time since last request: 4.523461 seconds.
+  path: Assets/Scenes/Hanger_contruction.unity
+  artifactKey: Guid(6317bd92c8b0dc849939d3fb9bff6c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hanger_contruction.unity using Guid(6317bd92c8b0dc849939d3fb9bff6c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394e13094c58535f466f35ef8afec986') in 0.006141 seconds 
+  Import took 0.013552 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.341311 seconds.
-  path: Assets/Scenes/Selecteur mission.unity
-  artifactKey: Guid(ca83020da9205374faeb341af7657d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Selecteur mission.unity using Guid(ca83020da9205374faeb341af7657d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5714ed65b988603f5be5a9c048fd4a4') in 0.005014 seconds 
-  Import took 0.012001 seconds .
+  Time since last request: 29.252042 seconds.
+  path: Assets/Props
+  artifactKey: Guid(dd06211f2e7f1c542be74583f1270db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props using Guid(dd06211f2e7f1c542be74583f1270db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14afacfb0cd370dc6c72aa77defe5239') in 0.008543 seconds 
+  Import took 0.015960 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 1.094219 seconds.
+  path: Assets/Props/batiment
+  artifactKey: Guid(68cce3c8f5ee76247b60f7ae730ea89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/batiment using Guid(68cce3c8f5ee76247b60f7ae730ea89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb72ff4f3cc63e2f9e820e25dc600cf') in 0.015305 seconds 
+  Import took 0.022561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047601 seconds.
+  path: Assets/Props/batiment/hangar_latecoere_meter.fbx
+  artifactKey: Guid(c6d51fd7f6a57004982464f2e33b298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/batiment/hangar_latecoere_meter.fbx using Guid(c6d51fd7f6a57004982464f2e33b298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c127bcc39aabef1b77cb3f1ffa5a3e') in 0.436354 seconds 
+  Import took 0.449422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.958465 seconds.
+  path: Assets/Props/aile
+  artifactKey: Guid(7ac96d9fb6ad40d4f8f495433fa91350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile using Guid(7ac96d9fb6ad40d4f8f495433fa91350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3642570f8e9756045c66d5f25c4b4e5') in 0.005184 seconds 
+  Import took 0.013050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027543 seconds.
+  path: Assets/Props/aile/aile_droite_biplan.fbx
+  artifactKey: Guid(020d2ba5a3497494b85818c784593fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/aile_droite_biplan.fbx using Guid(020d2ba5a3497494b85818c784593fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abba3fc397fe5bb0e55beedcc9b23ac1') in 0.022953 seconds 
+  Import took 0.029865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Props/aile/aile_droite_parasol.fbx
+  artifactKey: Guid(cd2c7cf1967be4b4abe235dd63f33129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/aile_droite_parasol.fbx using Guid(cd2c7cf1967be4b4abe235dd63f33129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef65e9e2d955c9ce3f6b0e8db0fa26fd') in 0.019597 seconds 
+  Import took 0.027707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Props/aile/aile_gauche_biplan(1).fbx
+  artifactKey: Guid(4bffaa87c76fd14428f8b9b662992b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/aile_gauche_biplan(1).fbx using Guid(4bffaa87c76fd14428f8b9b662992b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2cd951f8fe7d57fc48d306b53d7ac9') in 0.024738 seconds 
+  Import took 0.031562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.165325 seconds.
+  path: Assets/Props/aile/fixed
+  artifactKey: Guid(acc5f6673c4bf484e9f88646d81c7de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed using Guid(acc5f6673c4bf484e9f88646d81c7de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4611ba58e037b847ce446a767a5d83') in 0.004886 seconds 
+  Import took 0.012715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.804209 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1.fbx
+  artifactKey: Guid(76bb983088e5efc4f85b97017f946efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1.fbx using Guid(76bb983088e5efc4f85b97017f946efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c092b2a1a818ca03457f42cd9ff58552') in 0.025261 seconds 
+  Import took 0.031609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1.fbx
+  artifactKey: Guid(88ab59cdc3b790f41b736bb7b8f2574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1.fbx using Guid(88ab59cdc3b790f41b736bb7b8f2574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0fb01e69e07b35dc9e1ad09661dba7') in 0.017225 seconds 
+  Import took 0.026676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.710604 seconds.
+  path: Assets/Props/aile/fixed/texture_test.mat
+  artifactKey: Guid(39394c945e8927c4ab72b9849faddcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture_test.mat using Guid(39394c945e8927c4ab72b9849faddcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f36307a63a614df752ccd035d0568ac') in 0.024399 seconds 
+  Import took 0.034542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.731604 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Base_color.tga
+  artifactKey: Guid(b9ce1256ef6ea0642a765ee605f279e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Base_color.tga using Guid(b9ce1256ef6ea0642a765ee605f279e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc2f1e62165bde61fa7987aca7eaa81') in 0.060049 seconds 
+  Import took 0.070730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(cc4146ce8bca29a4dadbe7d3910390ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal_OpenGL.tga using Guid(cc4146ce8bca29a4dadbe7d3910390ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28167211172ba4617a19e3b1ef8fef4') in 0.014722 seconds 
+  Import took 0.022316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal.tga
+  artifactKey: Guid(67a639ec8f863d747b06e2b6ae699290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal.tga using Guid(67a639ec8f863d747b06e2b6ae699290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4d8cc838aae8fadec972e1577ce3f9') in 0.012577 seconds 
+  Import took 0.019541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(8bcb0963403a1304c8fc11f11da1062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Mixed_AO.tga using Guid(8bcb0963403a1304c8fc11f11da1062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23848551adbf0331e708804e00d0323') in 0.011494 seconds 
+  Import took 0.017939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Metallic.tga
+  artifactKey: Guid(56f35b9774d5241478d49cfbb995d0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Metallic.tga using Guid(56f35b9774d5241478d49cfbb995d0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214d48d8d29366818041f94372b95547') in 0.011672 seconds 
+  Import took 0.017582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Height.tga
+  artifactKey: Guid(74dcf80e36c867945aaca8ff136ea150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Height.tga using Guid(74dcf80e36c867945aaca8ff136ea150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0972c2785f105fcf826186895862f34') in 0.010524 seconds 
+  Import took 0.016262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Roughness.tga
+  artifactKey: Guid(5880d6c3e3f81cd4eaf61aef63d9ebb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Roughness.tga using Guid(5880d6c3e3f81cd4eaf61aef63d9ebb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4bca79d4d1c596dbf79c1308e5ec19') in 0.011408 seconds 
+  Import took 0.020212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.045904 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal.tga
+  artifactKey: Guid(67a639ec8f863d747b06e2b6ae699290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal.tga using Guid(67a639ec8f863d747b06e2b6ae699290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c05ffc4546ca5b3b9efc8b7bafbc7b') in 0.021796 seconds 
+  Import took 0.028199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.398228 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(cc4146ce8bca29a4dadbe7d3910390ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1/1001_Normal_OpenGL.tga using Guid(cc4146ce8bca29a4dadbe7d3910390ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaeeb63dc85cc424d5f32e9636591e3d') in 0.015255 seconds 
+  Import took 0.024419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.547171 seconds.
+  path: Assets/Props/aile/fixed/mat_test_2.mat
+  artifactKey: Guid(66b3964b5d72703498620126f989fd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/mat_test_2.mat using Guid(66b3964b5d72703498620126f989fd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006931e47da8599ff3fa62b4cc6bef21') in 0.021567 seconds 
+  Import took 0.032407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.716147 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Base_color.tga
+  artifactKey: Guid(07eaab51b9831d744ae273176e94c836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Base_color.tga using Guid(07eaab51b9831d744ae273176e94c836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8fb423eae00f473e73cb7b786aff74') in 0.021498 seconds 
+  Import took 0.035657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000554 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Height.tga
+  artifactKey: Guid(60f85e40a7b1dc949b1d9c1be80e3c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Height.tga using Guid(60f85e40a7b1dc949b1d9c1be80e3c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823ea3fe99b15b28cba6a178d71a4d05') in 0.027520 seconds 
+  Import took 0.034654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Roughness.tga
+  artifactKey: Guid(77046809878c0b14b9ad6aecbad87497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Roughness.tga using Guid(77046809878c0b14b9ad6aecbad87497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee16d3c3a54f10aed20f69820e80b49') in 0.011389 seconds 
+  Import took 0.017595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Metallic.tga
+  artifactKey: Guid(102dc8540ef37dc4e977e1588098bc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Metallic.tga using Guid(102dc8540ef37dc4e977e1588098bc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cead8e598746544d1a98cc917c4bf1') in 0.010872 seconds 
+  Import took 0.016612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga
+  artifactKey: Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga using Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec62663faa837de9463e0ddc8e4abdf3') in 0.009760 seconds 
+  Import took 0.015459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(d9e25631fff092b44979cefce59ed9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Mixed_AO.tga using Guid(d9e25631fff092b44979cefce59ed9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68cf54412594f0cc846e6466dfe5f310') in 0.012993 seconds 
+  Import took 0.021110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_DirectX.tga
+  artifactKey: Guid(e6da65df10dc4a24d9368aa59411e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_DirectX.tga using Guid(e6da65df10dc4a24d9368aa59411e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb36db47d5e0ca83d886ce50bd6396a') in 0.010837 seconds 
+  Import took 0.016393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.019972 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1
+  artifactKey: Guid(8c0936013913b8a47853ff9a9a9c003d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1 using Guid(8c0936013913b8a47853ff9a9a9c003d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de51471fc4fd20d04ff125f352170718') in 0.015773 seconds 
+  Import took 0.023059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.382868 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_DirectX.tga
+  artifactKey: Guid(e6da65df10dc4a24d9368aa59411e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_DirectX.tga using Guid(e6da65df10dc4a24d9368aa59411e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9608601e5e098984ed37723318dc0a92') in 0.019200 seconds 
+  Import took 0.031920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.473280 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga
+  artifactKey: Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga using Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc16a467c694ff7852a9d4e22a8b4c3') in 0.016492 seconds 
+  Import took 0.025816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 579.440101 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Base_color.tga
+  artifactKey: Guid(07eaab51b9831d744ae273176e94c836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Base_color.tga using Guid(07eaab51b9831d744ae273176e94c836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0b127da5ae5c3dfd50db105fa3762f') in 0.034592 seconds 
+  Import took 0.047576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(ac1553aa7d75a824c8d81ee52af3f9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_OpenGL.tga using Guid(ac1553aa7d75a824c8d81ee52af3f9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d15a388b166fe647435be747f22560d') in 0.018092 seconds 
+  Import took 0.026034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga
+  artifactKey: Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal.tga using Guid(d3448601c3e433844842b24faab66234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334e64c654e7121effe4621178ab1554') in 0.014784 seconds 
+  Import took 0.021112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(d9e25631fff092b44979cefce59ed9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Mixed_AO.tga using Guid(d9e25631fff092b44979cefce59ed9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b4d4dd3596c80e9913de22d7aeb440') in 0.012532 seconds 
+  Import took 0.020163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.210559 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(ac1553aa7d75a824c8d81ee52af3f9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1/1001_Normal_OpenGL.tga using Guid(ac1553aa7d75a824c8d81ee52af3f9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481c0e37c69ba467c3f097283c9b6ab3') in 0.019131 seconds 
+  Import took 0.026525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2091.765813 seconds.
+  path: Assets/Props/aile/fixed/aile_biplan_ww1.fbx
+  artifactKey: Guid(76bb983088e5efc4f85b97017f946efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_biplan_ww1.fbx using Guid(76bb983088e5efc4f85b97017f946efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d2972ed5da532c26e23459c67d145b') in 0.035412 seconds 
+  Import took 0.043231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Props/aile/fixed/aile_parasol_ww1.fbx
+  artifactKey: Guid(88ab59cdc3b790f41b736bb7b8f2574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/aile_parasol_ww1.fbx using Guid(88ab59cdc3b790f41b736bb7b8f2574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42caab48d3f3a10a42450f98d63ae25d') in 0.019240 seconds 
+  Import took 0.024490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Props/aile/fixed/fuselage_ww1.fbx
+  artifactKey: Guid(d9c52495f70d6954e858ca7132c268ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/fuselage_ww1.fbx using Guid(d9c52495f70d6954e858ca7132c268ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e29bef32ec0ecbdfb9ae1ae44822f02') in 0.021339 seconds 
+  Import took 0.026682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Props/aile/fixed/moteur_ww1.fbx
+  artifactKey: Guid(4a1684e13cbe9ed41ac03e8fbc07d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/moteur_ww1.fbx using Guid(4a1684e13cbe9ed41ac03e8fbc07d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3e314f0c7c7e293937b1536a50aff9') in 0.019620 seconds 
+  Import took 0.024902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Props/aile/fixed/helice_ww1.fbx
+  artifactKey: Guid(c880bf57ff87bd345a5c5882f0b459ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/helice_ww1.fbx using Guid(c880bf57ff87bd345a5c5882f0b459ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05db84622fb70e8f5ffead426eaa7fc5') in 0.023535 seconds 
+  Import took 0.032517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.751308 seconds.
+  path: Assets/Props/aile/fixed/texture
+  artifactKey: Guid(bfbeaed451d3c3e42a5cd57ce83905d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture using Guid(bfbeaed451d3c3e42a5cd57ce83905d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12f9582ec2593fa620e48b206c149ea') in 0.005442 seconds 
+  Import took 0.014917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.595830 seconds.
+  path: Assets/Props/aile/fixed/texture/Aile_biplan_ww1.mat
+  artifactKey: Guid(d547459c88ae34a4190f597d1c9af075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/Aile_biplan_ww1.mat using Guid(d547459c88ae34a4190f597d1c9af075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c82a64b39bd29384d80eadc5d3af6f4') in 0.018536 seconds 
+  Import took 0.026514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.323865 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Base_color.tga
+  artifactKey: Guid(7e63a95a688b2de4ea4eb974be284e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Base_color.tga using Guid(7e63a95a688b2de4ea4eb974be284e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165d391cce1c87030aba49c747a661e3') in 0.020910 seconds 
+  Import took 0.034156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Metallic.tga
+  artifactKey: Guid(547b9f500a8322245ac3aed68338af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Metallic.tga using Guid(547b9f500a8322245ac3aed68338af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207d92ffb27a047aea91c3a240be9b8f') in 0.012914 seconds 
+  Import took 0.020497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Height.tga
+  artifactKey: Guid(8f698293bcf31c74fbd7e4e6525f8203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Height.tga using Guid(8f698293bcf31c74fbd7e4e6525f8203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25061b738c1136b902be6b54e4d97be8') in 0.020470 seconds 
+  Import took 0.026131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Roughness.tga
+  artifactKey: Guid(1696aaffb7c04fa4e9cc0757dd74f85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Roughness.tga using Guid(1696aaffb7c04fa4e9cc0757dd74f85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118389eb2b5d7afa8f6c3f768f5c8eaa') in 0.009982 seconds 
+  Import took 0.015909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(d33a6689726d0c94280c6dd1a7b4b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Mixed_AO.tga using Guid(d33a6689726d0c94280c6dd1a7b4b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df000120e33c829c5dc3a6fb36d698d3') in 0.010949 seconds 
+  Import took 0.016769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal.tga
+  artifactKey: Guid(2093c4db7f2544949b4698aa5b94d838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal.tga using Guid(2093c4db7f2544949b4698aa5b94d838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf486a14451536f4c153eb37c9ce614') in 0.010254 seconds 
+  Import took 0.017267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(30b22463cc6487a48b77c214be40641e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal_OpenGL.tga using Guid(30b22463cc6487a48b77c214be40641e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57ccda270c57aa97bffba4de38bfc5d') in 0.012166 seconds 
+  Import took 0.017751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.432884 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(30b22463cc6487a48b77c214be40641e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_biplan_ww1/1001_Normal_OpenGL.tga using Guid(30b22463cc6487a48b77c214be40641e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db573f0971d208c65c8d45ec8a0ab0aa') in 0.015642 seconds 
+  Import took 0.023105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.996524 seconds.
+  path: Assets/Props/aile/fixed/texture/texture
+  artifactKey: Guid(956b4978ecfcaeb4ea550d3dad561fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture using Guid(956b4978ecfcaeb4ea550d3dad561fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171d8fb68e851ea88be922d2a76f22e8') in 0.004257 seconds 
+  Import took 0.012561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.603209 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/moteur_ww1
+  artifactKey: Guid(4ad3ba4ae9d64e44c8b66fdf311641b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/moteur_ww1 using Guid(4ad3ba4ae9d64e44c8b66fdf311641b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a25116879cbb260e759724034cc909b') in 0.004276 seconds 
+  Import took 0.011944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.972120 seconds.
+  path: Assets/Props/aile/fixed/texture/texture/aile_parasol_ww1
+  artifactKey: Guid(7499785a25c98424e9ae66b074ed245f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/texture/aile_parasol_ww1 using Guid(7499785a25c98424e9ae66b074ed245f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db1b548d4a86a0197caa3e284f129f1') in 0.004145 seconds 
+  Import took 0.011760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.291381 seconds.
+  path: Assets/Props/aile/fixed/texture/map
+  artifactKey: Guid(956b4978ecfcaeb4ea550d3dad561fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map using Guid(956b4978ecfcaeb4ea550d3dad561fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0755e834c1f811fecfdc8ea117e3671a') in 0.006055 seconds 
+  Import took 0.014755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.920706 seconds.
+  path: Assets/Props/aile/fixed/texture/Aile_parasol_ww1.mat
+  artifactKey: Guid(aa3c9579eea52f541ae761d198c820bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/Aile_parasol_ww1.mat using Guid(aa3c9579eea52f541ae761d198c820bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e609e2c8f02d656777882c8febeead') in 0.017676 seconds 
+  Import took 0.029452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.704233 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Base_color.tga
+  artifactKey: Guid(00bde8096334ae747831adaf0c7db771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Base_color.tga using Guid(00bde8096334ae747831adaf0c7db771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330c5726b441ce7aa04e5f907877efd1') in 0.021205 seconds 
+  Import took 0.032953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Roughness.tga
+  artifactKey: Guid(b282c219b3a05e44d9288f0e94d606b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Roughness.tga using Guid(b282c219b3a05e44d9288f0e94d606b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6f8f611d0eb414c3752e92bdbc7f96') in 0.016722 seconds 
+  Import took 0.024436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(904199bad903c194b9a39ef5089ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal_OpenGL.tga using Guid(904199bad903c194b9a39ef5089ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa24952cb2dc5259c3f06e0a869f147b') in 0.013581 seconds 
+  Import took 0.020437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Height.tga
+  artifactKey: Guid(ab9aa95492a069a4f996c856a4b4f952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Height.tga using Guid(ab9aa95492a069a4f996c856a4b4f952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30e2d4bf4a89a53342dcca08bd3f779') in 0.021765 seconds 
+  Import took 0.028496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(a287b3bd6efa9ae4b9bf76899116c69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Mixed_AO.tga using Guid(a287b3bd6efa9ae4b9bf76899116c69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30fae0592025a9fe6a27e4e3cbea07b') in 0.011947 seconds 
+  Import took 0.018388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Metallic.tga
+  artifactKey: Guid(6db90d674e217b84ba340fe1b4ef47fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Metallic.tga using Guid(6db90d674e217b84ba340fe1b4ef47fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7458fd84890e672ac188efe70a0e97e') in 0.012072 seconds 
+  Import took 0.017761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal.tga
+  artifactKey: Guid(5cedf41478e0633409f6106a22a75dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal.tga using Guid(5cedf41478e0633409f6106a22a75dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4961b5d116c2cd66d9d70ad471d435c8') in 0.011369 seconds 
+  Import took 0.017538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.568040 seconds.
+  path: Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(904199bad903c194b9a39ef5089ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/aile/fixed/texture/map/aile_parasol_ww1/1001_Normal_OpenGL.tga using Guid(904199bad903c194b9a39ef5089ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ac17cf1b8292c3ecafc6a085f89933') in 0.016397 seconds 
+  Import took 0.024569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 667.501052 seconds.
+  path: Assets/Props/1-fixed
+  artifactKey: Guid(acc5f6673c4bf484e9f88646d81c7de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed using Guid(acc5f6673c4bf484e9f88646d81c7de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f8b3841cac3235aa7c431a334e0fa9') in 0.006258 seconds 
+  Import took 0.014379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.452165 seconds.
+  path: Assets/Props/1-fixed/hangar_latecoere.fbx
+  artifactKey: Guid(7d1b8e79a24b43c47a35723d47612800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/hangar_latecoere.fbx using Guid(7d1b8e79a24b43c47a35723d47612800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0cf98f073f9a5a6818506c1aca4134') in 0.061186 seconds 
+  Import took 0.067336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 224.688088 seconds.
+  path: Assets/Props/1-fixed/texture/fuselage.mat
+  artifactKey: Guid(a8809073b3e58014c95a018965ca8662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/fuselage.mat using Guid(a8809073b3e58014c95a018965ca8662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09716a15624eb88c38408f00df2369a') in 0.016662 seconds 
+  Import took 0.027256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.912051 seconds.
+  path: Assets/Props/1-fixed/texture/Fuselage_ww1.mat
+  artifactKey: Guid(a8809073b3e58014c95a018965ca8662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/Fuselage_ww1.mat using Guid(a8809073b3e58014c95a018965ca8662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e784b90b20d7d463835ce49910e503e3') in 0.018749 seconds 
+  Import took 0.031731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.019647 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Base_color.tga
+  artifactKey: Guid(370903631dc2df44e83ebe0996ea45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Base_color.tga using Guid(370903631dc2df44e83ebe0996ea45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc00a4d8a15e11c3b5fe2f6f90d70ca') in 0.014701 seconds 
+  Import took 0.021714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal.tga
+  artifactKey: Guid(e1d60fa9b324c9f43b0cb2f94b939c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal.tga using Guid(e1d60fa9b324c9f43b0cb2f94b939c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da454adc70c7609b4ca54dd02a98000') in 0.021712 seconds 
+  Import took 0.028662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Metallic.tga
+  artifactKey: Guid(29d33a4394d949f488d51c80d91df3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Metallic.tga using Guid(29d33a4394d949f488d51c80d91df3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0dfff796027ae03203edceffd8ea657') in 0.010710 seconds 
+  Import took 0.016494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Height.tga
+  artifactKey: Guid(af635c0863a648f4d86ff56dcecf5ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Height.tga using Guid(af635c0863a648f4d86ff56dcecf5ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040cb6163d0120cd6ecb2f9ce70b9a1b') in 0.011365 seconds 
+  Import took 0.016979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(1c70c5ad02999434c92aba08352b478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal_OpenGL.tga using Guid(1c70c5ad02999434c92aba08352b478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0e91b2ca133d09dd7abf7e1591c5b9') in 0.010743 seconds 
+  Import took 0.016257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(0cd08f6c6c3aad3428d920a9a7e6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Mixed_AO.tga using Guid(0cd08f6c6c3aad3428d920a9a7e6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bffc723719c1bc039ddbb00ae43551') in 0.010869 seconds 
+  Import took 0.016403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Roughness.tga
+  artifactKey: Guid(0dcae0dd0a8540740b4afbbba788fd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Roughness.tga using Guid(0dcae0dd0a8540740b4afbbba788fd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fff0f48378ef014d3bf78d052ee809d') in 0.009920 seconds 
+  Import took 0.015316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.747875 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(1c70c5ad02999434c92aba08352b478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1/1001_Normal_OpenGL.tga using Guid(1c70c5ad02999434c92aba08352b478c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f180a8e40595ba9f712d32ad8c94b498') in 0.018701 seconds 
+  Import took 0.027282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.191361 seconds.
+  path: Assets/Props/1-fixed/texture/map/fuselage_ww1
+  artifactKey: Guid(ce3ec4cb655f2014b8f815d4062bd0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/fuselage_ww1 using Guid(ce3ec4cb655f2014b8f815d4062bd0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fd6ad878e339bd9abcecc7fadd27db') in 0.003689 seconds 
+  Import took 0.009827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.473993 seconds.
+  path: Assets/Props/1-fixed/texture/Engine_ww1.mat
+  artifactKey: Guid(b6fb0dabc3b9f7e458202b06fc9876ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/Engine_ww1.mat using Guid(b6fb0dabc3b9f7e458202b06fc9876ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ca91a309644cbf2e457a0cd79460df') in 0.013699 seconds 
+  Import took 0.022081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.637250 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Base_color.tga
+  artifactKey: Guid(c5344eee04f1ee64e9bb1912dd0a8e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Base_color.tga using Guid(c5344eee04f1ee64e9bb1912dd0a8e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179605f347496b81b9f23705281d578b') in 0.020714 seconds 
+  Import took 0.031698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(5fc73771d3998514a9efaa610866331a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Mixed_AO.tga using Guid(5fc73771d3998514a9efaa610866331a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4de8bf2b7ad4668b5635cb479794ed') in 0.018778 seconds 
+  Import took 0.028908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Height.tga
+  artifactKey: Guid(0f58d2be2a2a28349add8d8966d7e235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Height.tga using Guid(0f58d2be2a2a28349add8d8966d7e235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577481e211d55e8a778572b5787d619a') in 0.022190 seconds 
+  Import took 0.028931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal.tga
+  artifactKey: Guid(43a777223e115594388bc0ecb270e8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal.tga using Guid(43a777223e115594388bc0ecb270e8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c24a48033027c9a008432510701dd7c') in 0.010597 seconds 
+  Import took 0.016577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Metallic.tga
+  artifactKey: Guid(a89b382683ffcc74eb371bc4ac3e978d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Metallic.tga using Guid(a89b382683ffcc74eb371bc4ac3e978d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a2a3cb3b0f6c45027dbb296c0d7ff0') in 0.010700 seconds 
+  Import took 0.017003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Roughness.tga
+  artifactKey: Guid(c42fb33d603db7b4fa82903175019bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Roughness.tga using Guid(c42fb33d603db7b4fa82903175019bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27bf40f54a5963ba20e5cfb9247ba423') in 0.010409 seconds 
+  Import took 0.016897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(959356a7d4a7f1b41bfe0ff19cd3853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal_OpenGL.tga using Guid(959356a7d4a7f1b41bfe0ff19cd3853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436913c9f0e53eb1f5548ea1d3ca95ce') in 0.012409 seconds 
+  Import took 0.019784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.180390 seconds.
+  path: Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(959356a7d4a7f1b41bfe0ff19cd3853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/moteur_ww1/1001_Normal_OpenGL.tga using Guid(959356a7d4a7f1b41bfe0ff19cd3853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f195ed15d85d6bf1521d312d201d7619') in 0.013081 seconds 
+  Import took 0.019604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.156845 seconds.
+  path: Assets/Props/1-fixed/texture/Helice_ww1.mat
+  artifactKey: Guid(7c4fcd307107c144384ca4824bbbaa46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/Helice_ww1.mat using Guid(7c4fcd307107c144384ca4824bbbaa46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5d83f55b8f0116ec791c236182e1a8') in 0.015569 seconds 
+  Import took 0.026283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.488524 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Base_color.tga
+  artifactKey: Guid(4ce82337a28308d418ad375e5f611a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Base_color.tga using Guid(4ce82337a28308d418ad375e5f611a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f03238e431ac91a51df1233175bd723') in 0.014955 seconds 
+  Import took 0.024416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Height.tga
+  artifactKey: Guid(a1c81f489d2fbb1419c288b6fdf7d5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Height.tga using Guid(a1c81f489d2fbb1419c288b6fdf7d5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e147d54aa7c14c9b797a378a5d634f58') in 0.016089 seconds 
+  Import took 0.024735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(3ae4b35b0655ce44ea183c15bda8e58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal_OpenGL.tga using Guid(3ae4b35b0655ce44ea183c15bda8e58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef48d7a95da110db78a1158134dcfcf1') in 0.011837 seconds 
+  Import took 0.017713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Roughness.tga
+  artifactKey: Guid(d1246e39e8f230e429cdb13972fe9ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Roughness.tga using Guid(d1246e39e8f230e429cdb13972fe9ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8719f462137c9bfa6db3eec2e440155') in 0.013541 seconds 
+  Import took 0.019290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal.tga
+  artifactKey: Guid(d7ef72dca59627d4b95e0f1727b6deb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal.tga using Guid(d7ef72dca59627d4b95e0f1727b6deb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0198853da1612d441eb0481eb39201c7') in 0.011894 seconds 
+  Import took 0.020579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Metallic.tga
+  artifactKey: Guid(321f305598e13724baa91fea0ca9d772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Metallic.tga using Guid(321f305598e13724baa91fea0ca9d772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827f052f8e4be2dea103558737434679') in 0.010842 seconds 
+  Import took 0.016505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Mixed_AO.tga
+  artifactKey: Guid(8e16a7bd0a70dac45ba8535417203199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Mixed_AO.tga using Guid(8e16a7bd0a70dac45ba8535417203199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1832e0f5e97e067b69d371406b0ac783') in 0.012462 seconds 
+  Import took 0.017823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.710338 seconds.
+  path: Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal_OpenGL.tga
+  artifactKey: Guid(3ae4b35b0655ce44ea183c15bda8e58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/1-fixed/texture/map/helice_ww1/1001_Normal_OpenGL.tga using Guid(3ae4b35b0655ce44ea183c15bda8e58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f14308f1f1cb8f70f2d4ca8e0128d52') in 0.014221 seconds 
+  Import took 0.020716 seconds .
+
