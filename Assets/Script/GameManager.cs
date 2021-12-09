@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public int x;
     public int y;
     public int z;
-    public int size;
+    public float size;
     public List<GridObject> objDataBase;
     public GridObject curObject;
     public GUI gui;
