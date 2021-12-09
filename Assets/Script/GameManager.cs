@@ -26,15 +26,7 @@ public class GameManager : MonoBehaviour
         midle = x/2;
     }
 
-    /*void DestroyGameObject()
-    {
-        Destroy();
-    }*/
 
-    public void selectObject(int ID)
-    {
-        curObject = objDataBase[ID];
-    }
     void Update()
     {
 

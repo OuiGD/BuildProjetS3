@@ -27,7 +27,6 @@ public class Grid3D
                     Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y + 1, z), Color.white, 100f);// hauteur
                     Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x, y, z + 1), Color.white, 100f);// largeur
                     Debug.DrawLine(GetWorldPosition(x, y, z), GetWorldPosition(x + 1, y, z), Color.white, 100f);// lngueur
-                    //create a world text for debug
                 }
 
             }
@@ -62,7 +61,7 @@ public class Grid3D
 
     public bool canBuild(int x, int y, int z)
     {
-        if ((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0))
+        if (((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0)) && gridArray[x,y,z]!=1)
         {
             Debug.Log("x: "+ x + " /y: " + y + " /z: " + z);
             return true;

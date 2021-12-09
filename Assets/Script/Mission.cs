@@ -31,18 +31,19 @@ public class Mission
         switch (ID)
         {
             case 1:
-                    //le joueur ne doit pas dépasser 1300kg
-                    Objectif_poid = 1.3f;
-                    Excedant_poid = false;
+                //le joueur ne doit pas dépasser 1300kg
+                Objectif_poid = 1.3f;
+                Excedant_poid = false;
 
-                    //il n'y a pas d'objectif de charge
-                    Objectif_Charge = 0f;
-                    Excedant_Charge = true;
+                //il n'y a pas d'objectif de charge
+                Objectif_Charge = 0f;
+                Excedant_Charge = true;
 
-                    //le joueur doit atteindre un minimum de 180 km/h
-                    Objectif_Vitesse = 179f;
-                    Excedant_Vitesse = true;
-                    break;
+                //le joueur doit atteindre un minimum de 180 km/h
+                Objectif_Vitesse = 179f;
+                Excedant_Vitesse = true;
+                break;
+
             case 2:
                 //le joueur n'a pas de limite de poids
                 Objectif_poid = 0f;
