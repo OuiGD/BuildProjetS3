@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Motor
   m_EditorClassIdentifier: 
   Name: MoteurY
-  Poid: 8
+  Poid: 25
   Portance: 0
-  Puissance: 94
-  Consommation: 8
+  Puissance: 14
+  Consommation: 7
   Capacite: 0
   Dimension: 020000000100000001000000
   Fuel: 0
