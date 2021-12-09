@@ -27,9 +27,10 @@ public class GUI : MonoBehaviour
     const float FACTOR_POID = 1.40f;
     const float FACTOR_PUISSANCE = 0.10f;
     const float FACTOR_PORTANCE = 0.25f;
-    const float POID_MAX = 1000;
-    const float CHARGE_MAX = 1000;
-    const float VITESSE_MAX = 1000;
+
+    public float POID_MAX = 1000;
+    public float CHARGE_MAX = 1000;
+    public float VITESSE_MAX = 1000;
 
 
     // Start is called before the first frame update
@@ -74,7 +75,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur ne doit pas d�passer un poid
             if (mission_poid > Poid)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {
@@ -86,7 +87,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur doit exc�der un poid
             if (mission_poid < Poid)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {
@@ -103,7 +104,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur ne doit pas d�passer la capacit�
             if (mission_charge > Charge)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {
@@ -115,7 +116,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur doit exc�der la capacit�
             if (mission_charge < Charge)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {
@@ -132,7 +133,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur ne doit pas d�passer la vitesse
             if (vitesse_max > Vitesse)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {
@@ -144,7 +145,7 @@ public class GUI : MonoBehaviour
             //dans le cas ou le joueur doit exc�der la vitesse
             if (vitesse_max < Vitesse)
             {
-                Debug.Log("gagn�");
+                Debug.Log("gagne");
             }
             else
             {

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class bouton_menu : MonoBehaviour
 {
     private Mission mission;
-    private GUI gui;
+    public GUI gui;
 
     void start()
     {
@@ -35,7 +35,7 @@ public class bouton_menu : MonoBehaviour
     {
         //renvoie au hangar de construction
         SceneManager.LoadScene("Hanger_contruction");
-        mission.LaunchMission1();
+        mission.LaunchMission();
     }
 
     public void Hangar_no_contrat()
