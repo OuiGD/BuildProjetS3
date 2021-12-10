@@ -16,10 +16,11 @@ public class GUI : MonoBehaviour
     private Vector3 CurPos;
     private float distance;
 
-    private float Poid;
+    public float Poid;
+    private float PoidRatio;
     private float Dimention;
-    private float Vitesse;
-    private float Charge;
+    public float Vitesse;
+    public float Charge;
     private float Distance;
     private float Portance;
     private float Puissance;
@@ -43,24 +44,25 @@ public class GUI : MonoBehaviour
         Distance = 0f;
         Portance = 0f;
         Puissance = 0f;
+        PoidRatio = 0f;
 
         POID_MAX = Mission.Objectif_poid;
         CHARGE_MAX = Mission.Objectif_Charge;
         VITESSE_MAX = Mission.Objectif_Vitesse;
 
-        statBarPoid.fillAmount = Poid;
+        statBarPoid.fillAmount = PoidRatio;
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
 
-        Debug.Log("poid max: "+POID_MAX);
-        Debug.Log("charge max: "+CHARGE_MAX);
-        Debug.Log("vitesse max: "+VITESSE_MAX);
+        Debug.Log("poid max: " + POID_MAX);
+        Debug.Log("charge max: " + CHARGE_MAX);
+        Debug.Log("vitesse max: " + VITESSE_MAX);
         Debug.Log("************************");
     }
 
     public void SelectionWheel(float x, float Axis)
     {
-        carousel.transform.Rotate(new Vector3(0, 0, 1), ((Mathf.Sqrt(x) * -Axis)/2));
+        carousel.transform.Rotate(new Vector3(0, 0, 1), ((Mathf.Sqrt(x) * -Axis) / 2));
     }
 
     public void StatsBarUpdate(GridObject objAjout)
@@ -74,23 +76,17 @@ public class GUI : MonoBehaviour
         Debug.Log("poid actuel: " + Poid);
         Debug.Log("************************");
 
-        Poid = Poid * 0.1f;
-        Vitesse = (Puissance - Poid) * (Portance * Mathf.Pow(FACTOR_PORTANCE, 2));
-        Charge = (Portance * FACTOR_PORTANCE) + (Puissance * FACTOR_PUISSANCE) - (Poid * FACTOR_POID);
+        PoidRatio = Poid * 0.001f;
+        Vitesse = (Puissance - PoidRatio) * (Portance * Mathf.Pow(FACTOR_PORTANCE, 2)) * 10;
+        Charge = (Portance * FACTOR_PORTANCE) + (Puissance * FACTOR_PUISSANCE) - (PoidRatio * FACTOR_POID);
 
         Debug.Log("vitesse actuel: " + Vitesse);
         Debug.Log("charge actuel: " + Charge);
         Debug.Log("************************");
 
-        statBarPoid.fillAmount = Poid / (POID_MAX*0.1f);
+        statBarPoid.fillAmount = Poid / POID_MAX;
         statBarVitesse.fillAmount = Vitesse / VITESSE_MAX;
         statBarCharge.fillAmount = Charge / CHARGE_MAX;
-    }
-
-    //cette fonction valide les missions
-    public void Bouton_validation(float mission_poid, bool poid_greater_than, float mission_charge, bool charge_greater_than, float vitesse_max, bool vitesse_greater_than)
-    {
-
     }
 
 

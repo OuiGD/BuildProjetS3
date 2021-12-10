@@ -7,6 +7,7 @@ public class bouton_menu : MonoBehaviour
 {
     private Mission mission;
     public GameManager game;
+    public GUI gui;
 
 
     public void selectObject(int ID)
@@ -59,10 +60,10 @@ public class bouton_menu : MonoBehaviour
         //gui.Bouton_validation(mission.Objectif_poid, mission.Excedant_poid, mission.Objectif_Charge, mission.Excedant_Charge, mission.Objectif_Vitesse, mission.Excedant_Vitesse);
         //le jeu va v�rifier si le poid de l'avion correspond � la mission
         //ce "if" v�rifie si le joueur doit avoir une valeur plus petit ou plus grande.
-       /* if (poid_greater_than)
+        if (!Mission.Excedant_poid)
         {
             //dans le cas ou le joueur ne doit pas d�passer un poid
-            if (mission_poid > Poid)
+            if (Mission.Objectif_poid > gui.Poid)
             {
                 Debug.Log("gagne");
             }
@@ -74,7 +75,7 @@ public class bouton_menu : MonoBehaviour
         else
         {
             //dans le cas ou le joueur doit exc�der un poid
-            if (mission_poid < Poid)
+            if (Mission.Objectif_poid < gui.Poid)
             {
                 Debug.Log("gagne");
             }
@@ -88,10 +89,10 @@ public class bouton_menu : MonoBehaviour
 
         //le jeu va v�rifier si la capacit� de charge de l'avion correspond � la mission
         //ce "if" v�rifie si le joueur doit avoir une valeur plus petit ou plus grande.
-        if (charge_greater_than)
+        if (!Mission.Excedant_Charge)
         {
             //dans le cas ou le joueur ne doit pas d�passer la capacit�
-            if (mission_charge > Charge)
+            if (Mission.Objectif_Charge > gui.Charge)
             {
                 Debug.Log("gagne");
             }
@@ -103,7 +104,7 @@ public class bouton_menu : MonoBehaviour
         else
         {
             //dans le cas ou le joueur doit exc�der la capacit�
-            if (mission_charge < Charge)
+            if (Mission.Objectif_Charge < gui.Charge)
             {
                 Debug.Log("gagne");
             }
@@ -117,10 +118,10 @@ public class bouton_menu : MonoBehaviour
 
         //le jeu va v�rifier si la vitesse de l'avion correspond � la mission
         //ce "if" v�rifie si le joueur doit avoir une valeur plus petit ou plus grande.
-        if (vitesse_greater_than)
+        if (!Mission.Excedant_Vitesse)
         {
             //dans le cas ou le joueur ne doit pas d�passer la vitesse
-            if (vitesse_max > Vitesse)
+            if (Mission.Objectif_Vitesse > gui.Vitesse)
             {
                 Debug.Log("gagne");
             }
@@ -132,7 +133,7 @@ public class bouton_menu : MonoBehaviour
         else
         {
             //dans le cas ou le joueur doit exc�der la vitesse
-            if (vitesse_max < Vitesse)
+            if (Mission.Objectif_Vitesse < gui.Vitesse)
             {
                 Debug.Log("gagne");
             }
@@ -140,6 +141,6 @@ public class bouton_menu : MonoBehaviour
             {
                 Debug.Log("perdu");
             }
-        }*/
+        }
     }
 }
