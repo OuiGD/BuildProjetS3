@@ -9,7 +9,7 @@ public class GyroControler : MonoBehaviour
 
     private bool gyroEnabled;
     private Gyroscope gyro;
-    private Quaternion rot;
+    private Quaternion init;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class GyroControler : MonoBehaviour
         {
             gyro = Input.gyro;
             gyro.enabled = true;
+            init = gyro.attitude;
 
             return true;
         }
@@ -31,12 +32,27 @@ public class GyroControler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {       
+    {
         if (gyroEnabled)
         {
-            target.transform.localRotation = gyro.attitude;
-        }
-        else
+            if (gyro.attitude.eulerAngles.x - init.eulerAngles.x > 30)
+            {
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 10 * Time.deltaTime);
+            }
+            else if (gyro.attitude.eulerAngles.x - init.eulerAngles.x < -30)
+            {
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.down, 10 * Time.deltaTime);
+            }
+            if (gyro.attitude.eulerAngles.z - init.eulerAngles.z > 30)
+            {
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.right, 10 * Time.deltaTime);
+            }
+            else if (gyro.attitude.eulerAngles.z - init.eulerAngles.z < -30)
+            {
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.left, 10 * Time.deltaTime);
+            }
+
+        }else
         {
             Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
         }
