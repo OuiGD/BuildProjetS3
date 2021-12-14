@@ -29,7 +29,9 @@ public class GyroControler : MonoBehaviour
             gyro.enabled = true;
             init = gyro.attitude;
 
-            return true;
+            Debug.Log("init: "+init);
+
+            return false;
         }
         return false;
     }
@@ -39,24 +41,28 @@ public class GyroControler : MonoBehaviour
     {
         if (gyroEnabled)
         {
-            if (gyro.attitude.eulerAngles.x - init.eulerAngles.x > 30)
+            if (gyro.attitude.eulerAngles.x - init.eulerAngles.x > 20)
             {
-                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 10 * Time.deltaTime);
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 15 * Time.deltaTime);
             }
-            else if (gyro.attitude.eulerAngles.x - init.eulerAngles.x < -30)
+            else if (gyro.attitude.eulerAngles.x - init.eulerAngles.x < -20)
             {
-                Maincamera.transform.RotateAround(target.transform.position, Vector3.down, 10 * Time.deltaTime);
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, -15 * Time.deltaTime);
             }
-            if (gyro.attitude.eulerAngles.z - init.eulerAngles.z > 30)
+            /*if (gyro.attitude.eulerAngles.z - init.eulerAngles.z > 30)
             {
                 Maincamera.transform.RotateAround(target.transform.position, Vector3.right, 10 * Time.deltaTime);
             }
             else if (gyro.attitude.eulerAngles.z - init.eulerAngles.z < -30)
             {
                 Maincamera.transform.RotateAround(target.transform.position, Vector3.left, 10 * Time.deltaTime);
-            }
-
-        }else
+            }*/
+            /*Debug.Log(init);
+            Debug.Log(init.eulerAngles);
+            Debug.Log("angle cam" + gyro.attitude.eulerAngles.x);
+            Debug.Log("angle init"+init.eulerAngles.x);*/
+        }
+        else
         {
             if (Input.GetMouseButtonDown(0))
             {

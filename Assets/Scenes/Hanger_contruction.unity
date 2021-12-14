@@ -868,7 +868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1141,6 +1141,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 20d4b7dea5ebb8244925d6bb6c5eb0a5, type: 2}
   curObject: {fileID: 0}
   gui: {fileID: 1627692509}
+  fx: {fileID: 1777652789}
 --- !u!4 &1622270840
 Transform:
   m_ObjectHideFlags: 0

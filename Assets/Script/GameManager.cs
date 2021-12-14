@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         Invert = new Vector3(-1f, 1f, 1f);
         Grid = new Grid3D(x,y,z,size);
         Instantiate(objDataBase[0].Module, Grid.GetWorldPosition(((x-objDataBase[0].Dimension[0])/2),((y - objDataBase[0].Dimension[1])/2),((z - objDataBase[0].Dimension[2])/2)), Quaternion.identity);
+        gui.StatsBarUpdate(objDataBase[0]);
         midle = x/2;
     }
 

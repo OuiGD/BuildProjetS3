@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cor
   m_EditorClassIdentifier: 
   Name: FuselageBlinde
-  Poid: 50
+  Poid: 500
   Portance: 0
   Puissance: 0
   Consommation: 0
