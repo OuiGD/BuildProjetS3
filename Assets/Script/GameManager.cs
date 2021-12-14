@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
                 Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
                 Grid.GetGridPosition(coord, out int x, out int y, out int z);
 
-                if (Grid.canBuild(x,y,z))
+                if (Grid.canBuild(x,y,z) && curObject!=null)
                 {
                     Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
                     gui.StatsBarUpdate(curObject);
