@@ -64,12 +64,14 @@ public class bouton_menu : MonoBehaviour
         {
             //dans le cas ou le joueur ne doit pas d�passer un poid
             if (Mission.Objectif_poid > gui.Poid)
-            {
+            {                
                 Debug.Log("gagne");
+                Resultat.poid = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.poid = false;
             }
         }
         else
@@ -78,10 +80,12 @@ public class bouton_menu : MonoBehaviour
             if (Mission.Objectif_poid < gui.Poid)
             {
                 Debug.Log("gagne");
+                Resultat.poid = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.poid = false;
             }
         }
 
@@ -95,10 +99,12 @@ public class bouton_menu : MonoBehaviour
             if (Mission.Objectif_Charge > gui.Charge)
             {
                 Debug.Log("gagne");
+                Resultat.charge = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.charge = false;
             }
         }
         else
@@ -107,10 +113,12 @@ public class bouton_menu : MonoBehaviour
             if (Mission.Objectif_Charge < gui.Charge)
             {
                 Debug.Log("gagne");
+                Resultat.charge = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.charge = false;
             }
         }
 
@@ -124,10 +132,12 @@ public class bouton_menu : MonoBehaviour
             if (Mission.Objectif_Vitesse > gui.Vitesse)
             {
                 Debug.Log("gagne");
+                Resultat.vitesse = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.vitesse = false;
             }
         }
         else
@@ -136,11 +146,14 @@ public class bouton_menu : MonoBehaviour
             if (Mission.Objectif_Vitesse < gui.Vitesse)
             {
                 Debug.Log("gagne");
+                Resultat.vitesse = true;
             }
             else
             {
                 Debug.Log("perdu");
+                Resultat.vitesse = false;
             }
         }
+        SceneManager.LoadScene("End_Screen");
     }
 }

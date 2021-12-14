@@ -15,6 +15,8 @@ public class GyroControler : MonoBehaviour
     private Gyroscope gyro;
     private Quaternion init;
 
+    private float angle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,14 +43,17 @@ public class GyroControler : MonoBehaviour
     {
         if (gyroEnabled)
         {
-            if (gyro.attitude.eulerAngles.x - init.eulerAngles.x > 20)
+            angle = gyro.attitude.eulerAngles.x - init.eulerAngles.x;
+
+            if (angle > 20)
             {
-                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 15 * Time.deltaTime);
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 10 * Time.deltaTime);
             }
-            else if (gyro.attitude.eulerAngles.x - init.eulerAngles.x < -20)
+            else if (angle < -20)
             {
-                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, -15 * Time.deltaTime);
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 10 * Time.deltaTime);
             }
+
             /*if (gyro.attitude.eulerAngles.z - init.eulerAngles.z > 30)
             {
                 Maincamera.transform.RotateAround(target.transform.position, Vector3.right, 10 * Time.deltaTime);
@@ -57,10 +62,13 @@ public class GyroControler : MonoBehaviour
             {
                 Maincamera.transform.RotateAround(target.transform.position, Vector3.left, 10 * Time.deltaTime);
             }*/
-            /*Debug.Log(init);
-            Debug.Log(init.eulerAngles);
-            Debug.Log("angle cam" + gyro.attitude.eulerAngles.x);
-            Debug.Log("angle init"+init.eulerAngles.x);*/
+          
+            //Debug.Log(init);
+            //Debug.Log(init.eulerAngles);
+            //Debug.Log("angle cam" + (gyro.attitude.eulerAngles.x - init.eulerAngles.x));
+            //Debug.Log("angle cam" + gyro.attitude.w);
+            //Debug.Log("angle init"+init.eulerAngles.x);
+            //Debug.Log("angle init" + init.eulerAngles);
         }
         else
         {

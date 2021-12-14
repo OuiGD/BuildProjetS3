@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hanger_contruction.unity
     guid: 6317bd92c8b0dc849939d3fb9bff6c9c
+  - enabled: 1
+    path: Assets/Scenes/End_Screen.unity
+    guid: 0d94fd33bdf0870499a7327fbdbaace2
   m_configObjects: {}
