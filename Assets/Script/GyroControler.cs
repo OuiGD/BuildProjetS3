@@ -7,6 +7,10 @@ public class GyroControler : MonoBehaviour
     public GameObject target;
     public GameObject Maincamera;
 
+    private Vector3 InitPos;
+    private Vector3 CurPos;
+    private float distance;
+
     private bool gyroEnabled;
     private Gyroscope gyro;
     private Quaternion init;
@@ -54,7 +58,18 @@ public class GyroControler : MonoBehaviour
 
         }else
         {
-            Maincamera.transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
+            if (Input.GetMouseButtonDown(0))
+            {
+                //Debug.Log("1er click");
+                InitPos = Input.mousePosition;
+            }
+            if (Input.GetMouseButton(0))
+            {
+                //Debug.Log("on drag");
+                CurPos = Input.mousePosition;
+                distance = Vector3.Distance(CurPos, InitPos);
+                Maincamera.transform.RotateAround(target.transform.position, Vector3.up, ((Mathf.Sqrt(distance) * Input.GetAxisRaw("Mouse X")) / 2));
+            } 
         }
     }
 }

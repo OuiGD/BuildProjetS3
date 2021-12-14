@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public List<GridObject> objDataBase;
     public GridObject curObject;
     public GUI gui;
+    public SoundFX fx;
 
     private Grid3D Grid;
     private Vector3 Invert;
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
                 if (Grid.canBuild(x,y,z) && curObject!=null)
                 {
                     Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    fx.AjoutModul(curObject.Name);
                     gui.StatsBarUpdate(curObject);
                     if (x < midle && curObject.Name == "Aile")
                     {
