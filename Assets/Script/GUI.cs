@@ -50,10 +50,10 @@ public class GUI : MonoBehaviour
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
 
-        Debug.Log("poid max: " + POID_MAX);
+        /*Debug.Log("poid max: " + POID_MAX);
         Debug.Log("charge max: " + CHARGE_MAX);
         Debug.Log("vitesse max: " + VITESSE_MAX);
-        Debug.Log("************************");
+        Debug.Log("************************");*/
     }
 
     public void SelectionWheel(float x, float Axis)
@@ -67,26 +67,17 @@ public class GUI : MonoBehaviour
         Portance += (float)objAjout.Portance;
         Poid += (float)objAjout.Poid;
 
-        Debug.Log("puissance actuel: " + Puissance);
-        Debug.Log("portance actuel: " + Portance);
-        Debug.Log("poid actuel: " + Poid);
-        Debug.Log("************************");
-
         PoidRatio = Poid * 0.001f;
         Vitesse = (Puissance - PoidRatio) * (Portance * Mathf.Pow(FACTOR_PORTANCE, 2)) * 10;
         Charge = (Portance * FACTOR_PORTANCE) + (Puissance * FACTOR_PUISSANCE) - (PoidRatio * FACTOR_POID);
-
-        Debug.Log("vitesse actuel: " + Vitesse);
-        Debug.Log("charge actuel: " + Charge);
-        Debug.Log("************************");
 
         valPoid.text = Poid.ToString("0");
         valCharge.text = Charge.ToString("0");
         valVitesse.text = Vitesse.ToString("0");
 
-        statBarPoid.fillAmount = Poid / POID_MAX;
-        statBarVitesse.fillAmount = Vitesse / VITESSE_MAX;
-        statBarCharge.fillAmount = Charge / CHARGE_MAX;
+        if (Poid <= POID_MAX) { statBarPoid.fillAmount = Poid / POID_MAX; } else { statBarPoid.fillAmount = 1; }
+        if (Vitesse <= VITESSE_MAX) { statBarVitesse.fillAmount = Vitesse / VITESSE_MAX; } else { statBarVitesse.fillAmount = 1; }
+        if (Charge <= CHARGE_MAX) { statBarCharge.fillAmount = Charge / CHARGE_MAX; } else { statBarCharge.fillAmount = 1; }
     }
 
 

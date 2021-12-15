@@ -31,7 +31,7 @@ public class GyroControler : MonoBehaviour
             gyro.enabled = true;
             init = gyro.attitude;
 
-            Debug.Log("init: "+init);
+            //Debug.Log("init: "+init);
 
             return false;
         }

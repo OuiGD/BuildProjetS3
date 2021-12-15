@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class bouton_menu : MonoBehaviour
 {
@@ -13,6 +14,14 @@ public class bouton_menu : MonoBehaviour
     public void selectObject(int ID)
     {
         game.curObject = game.objDataBase[ID];
+    }
+
+    public void curSelectButon(Button curButton, Button aButton, Button bButton, Button cButton)
+    {
+        curButton.image.color = Color.grey;
+        aButton.image.color = Color.white;
+        bButton.image.color = Color.white;
+        cButton.image.color = Color.white;
     }
 
     public void OnbuttonPress()

@@ -47,13 +47,16 @@ public class Grid3D
 
     public void ObjInGrid(int x, int y, int z, List<int> dim, int pas)
     {
-        for (int i = 0; x < dim[0]; i++)
+        for (int i = 0; i < dim[0]; i++)
         {
-            for (int j = 0; y < dim[1]; i++)
+            Debug.Log("c'est re merde");
+            for (int j = 0; j < dim[1]; j++)
             {
-                for (int k = 0; z < dim[2]; i++)
+                Debug.Log("c'est encore la merde");
+                for (int k = 0; k < dim[2]; k++)
                 {
-                    gridArray[x+(i*pas), y+(j*pas), z+(k*pas)] = 1;
+                    Debug.Log("c'est la merde");
+                    gridArray[x + (i * pas), y + (j * pas), z + (k * pas)] = 1;
                 }
             }
         }
@@ -61,9 +64,8 @@ public class Grid3D
 
     public bool canBuild(int x, int y, int z)
     {
-        if (((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0)) && gridArray[x,y,z]!=1)
+        if (((x < gridX) && (y < gridY) && (z < gridZ) && (x > 0) && (y > 0) && (z >0)) /*&& gridArray[x,y,z]!=1*/)
         {
-            Debug.Log("x: "+ x + " /y: " + y + " /z: " + z);
             return true;
         }
         else

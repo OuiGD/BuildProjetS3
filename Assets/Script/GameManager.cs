@@ -31,13 +31,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
         //selection de l'objet curObject=selection
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit pos;
             Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(ray,out pos))
             {
                 Vector3 coord = ray.origin+(ray.direction*(pos.distance));// point de contact du ray avec le dodule / size + mathf.round
@@ -45,17 +43,18 @@ public class GameManager : MonoBehaviour
 
                 if (Grid.canBuild(x,y,z) && curObject!=null)
                 {
-                    Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x,y,z), Quaternion.identity);
+                    Modul = Instantiate(curObject.Module, Grid.GetWorldPosition(x, y, z), Quaternion.identity);
                     fx.AjoutModul(curObject.Name);
                     gui.StatsBarUpdate(curObject);
                     if (x < midle && curObject.Name == "Aile")
                     {
                         Modul.transform.localScale = Invert;
-                        Grid.ObjInGrid(x, y, z, curObject.Dimension,-1);
+                        Grid.ObjInGrid(x, y, z, curObject.Dimension, -1);
                     }
                     else
                     {
-                        Grid.ObjInGrid(x, y, z, curObject.Dimension,1);
+                        print(curObject.Dimension);
+                        Grid.ObjInGrid(x, y, z, curObject.Dimension, 1);
                     }
                     
                 }

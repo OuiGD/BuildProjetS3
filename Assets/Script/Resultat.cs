@@ -48,7 +48,7 @@ public class Resultat : MonoBehaviour
             {
                 vitessetxt = "probleme de vitesse, ";
             }
-            result.text = "Cher Latécoère, L’état major a bien observé la démonstration de votre avion, ce qui a surtout été dûment observé ont été les terribles erreurs, aussi, l’avion ne répondent pas aux demandes de notre état-major. En effet il presente les defauts suivant: "+poidtxt+vitessetxt+chargetxt+ "Cependant, dans son extrême clémence, Mr le président Raymond Poincaré vous laisse la possibilité de réparer vos erreurs en corrigeant votre avion";
+            result.text = "Cher Latécoère, L’état major a bien observé la démonstration de votre avion, ce qui a surtout été dûment observé ont été les terribles erreurs, aussi, l’avion ne répondent pas aux demandes de notre état-major. En effet il presente les defauts suivant: "+poidtxt+vitessetxt+chargetxt+ "Cependant, dans son extrême clémence, Mr le président Raymond Poincaré vous laisse la possibilité de réparer vos erreurs en corrigeant votre avion.";
         }
     }
 }
