@@ -11,19 +11,22 @@ public class GUI : MonoBehaviour
     public Image statBarVitesse;
     public GameObject carousel;
 
+    public Text valPoid;
+    public Text valVitesse;
+    public Text valCharge;
 
     private Vector3 InitPos;
     private Vector3 CurPos;
     private float distance;
 
-    public float Poid;
-    private float PoidRatio;
-    private float Dimention;
-    public float Vitesse;
-    public float Charge;
-    private float Distance;
-    private float Portance;
-    private float Puissance;
+    public float Poid = 0f;
+    private float PoidRatio = 0f;
+    private float Dimention = 0f;
+    public float Vitesse =0f;
+    public float Charge = 0f;
+    private float Distance = 0f;
+    private float Portance = 0f;
+    private float Puissance = 0f;
 
     const float FACTOR_POID = 1.40f;
     const float FACTOR_PUISSANCE = 0.10f;
@@ -37,13 +40,6 @@ public class GUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Poid = 0f;
-        Dimention = 0f;
-        Vitesse = 0f;
-        Charge = 0f;
-        Distance = 0f;
-        Portance = 0f;
-        Puissance = 0f;
         PoidRatio = 0f;
 
         POID_MAX = Mission.Objectif_poid;
@@ -83,6 +79,10 @@ public class GUI : MonoBehaviour
         Debug.Log("vitesse actuel: " + Vitesse);
         Debug.Log("charge actuel: " + Charge);
         Debug.Log("************************");
+
+        valPoid.text = Poid.ToString("0");
+        valCharge.text = Charge.ToString("0");
+        valVitesse.text = Vitesse.ToString("0");
 
         statBarPoid.fillAmount = Poid / POID_MAX;
         statBarVitesse.fillAmount = Vitesse / VITESSE_MAX;
