@@ -247,6 +247,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 100f4b4473e26ac409dd940b7cacb8cd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d6d55db6af938545a7ed8d99b2edd61, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0750f312474804145aa02b28b55b39ed, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 088a016a0ed071241b93ec24ea01587e, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e9b9fe935fb5fc4dabf72b58849d50a, type: 2}
     - target: {fileID: 919132149155446097, guid: bec3175dc6b5af840b39a0bb74113d8f, type: 3}
       propertyPath: m_Name
       value: hangar_latecoere 1
@@ -485,7 +505,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 76bb983088e5efc4f85b97017f946efe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d547459c88ae34a4190f597d1c9af075, type: 2}
+      objectReference: {fileID: 2100000, guid: 5589bd2576edf2946b6474857f1d1966, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb983088e5efc4f85b97017f946efe, type: 3}
       propertyPath: m_Name
       value: aile_biplan_ww1
@@ -832,7 +852,7 @@ PrefabInstance:
     - target: {fileID: -5030517816455378275, guid: 72bc921a7e9e07d4e82f6c566a8a0d93, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 39bce444708b6c94e8c7b80da48b8c0e, type: 2}
+      objectReference: {fileID: 2100000, guid: 6e54eb1631f0f4240ac5365767115e68, type: 2}
     - target: {fileID: -87169405663463674, guid: 72bc921a7e9e07d4e82f6c566a8a0d93, type: 3}
       propertyPath: m_CastShadows
       value: 1
@@ -844,7 +864,7 @@ PrefabInstance:
     - target: {fileID: -87169405663463674, guid: 72bc921a7e9e07d4e82f6c566a8a0d93, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 39bce444708b6c94e8c7b80da48b8c0e, type: 2}
+      objectReference: {fileID: 2100000, guid: 6e54eb1631f0f4240ac5365767115e68, type: 2}
     - target: {fileID: 919132149155446097, guid: 72bc921a7e9e07d4e82f6c566a8a0d93, type: 3}
       propertyPath: m_Name
       value: Avion_start_LD_no_anim
