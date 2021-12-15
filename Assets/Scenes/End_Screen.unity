@@ -678,6 +678,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 4997747820934460737, guid: 84bcc8269a9c9b14191e54dd9d6aadf6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997747820934460737, guid: 84bcc8269a9c9b14191e54dd9d6aadf6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 620281825}
+    - target: {fileID: 4997747820934460737, guid: 84bcc8269a9c9b14191e54dd9d6aadf6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84bcc8269a9c9b14191e54dd9d6aadf6, type: 3}
 --- !u!114 &8578946132218941606 stripped

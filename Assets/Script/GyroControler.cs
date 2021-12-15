@@ -77,7 +77,7 @@ public class GyroControler : MonoBehaviour
                 //Debug.Log("1er click");
                 InitPos = Input.mousePosition;
             }
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && InitPos.x < 1800)
             {
                 //Debug.Log("on drag");
                 CurPos = Input.mousePosition;

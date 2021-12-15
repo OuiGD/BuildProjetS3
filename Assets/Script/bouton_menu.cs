@@ -16,13 +16,13 @@ public class bouton_menu : MonoBehaviour
         game.curObject = game.objDataBase[ID];
     }
 
-    public void curSelectButon(Button curButton, Button aButton, Button bButton, Button cButton)
+    /*public void curSelectButon(Button curButton, Button aButton, Button bButton, Button cButton)
     {
         curButton.image.color = Color.grey;
         aButton.image.color = Color.white;
         bButton.image.color = Color.white;
         cButton.image.color = Color.white;
-    }
+    }*/
 
     public void OnbuttonPress()
     {
@@ -105,7 +105,7 @@ public class bouton_menu : MonoBehaviour
         if (!Mission.Excedant_Charge)
         {
             //dans le cas ou le joueur ne doit pas d�passer la capacit�
-            if (Mission.Objectif_Charge > gui.Charge)
+            if (Mission.Objectif_Charge > gui.Charge && gui.Charge >= 0)
             {
                 Debug.Log("gagne");
                 Resultat.charge = true;
@@ -119,7 +119,7 @@ public class bouton_menu : MonoBehaviour
         else
         {
             //dans le cas ou le joueur doit exc�der la capacit�
-            if (Mission.Objectif_Charge < gui.Charge)
+            if (Mission.Objectif_Charge < gui.Charge && gui.Charge >= 0)
             {
                 Debug.Log("gagne");
                 Resultat.charge = true;

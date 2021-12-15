@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44974494, g: 0.4998108, b: 0.57562125, a: 1}
+  m_IndirectSpecularColor: {r: 0.44974488, g: 0.49981064, b: 0.5756223, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -223,6 +223,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 343124487610243769, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343124487610243769, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillOrigin
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 418847752445184287, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -238,7 +246,7 @@ PrefabInstance:
     - target: {fileID: 418847752445184287, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034990319}
     - target: {fileID: 418847752445184287, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -274,6 +282,38 @@ PrefabInstance:
     - target: {fileID: 418847752445184287, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 869211588558536475, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 869211588558536475, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869211588558536475, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869211588558536475, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869211588558536475, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397565043376951512, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397565043376951512, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397565043376951512, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillOrigin
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3771883762178655115, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -313,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3771883762272856997, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -127.52002
+      value: -127.52051
       objectReference: {fileID: 0}
     - target: {fileID: 3771883762272856998, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -443,6 +483,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3771883763121782575, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: BarRG
+      value: 
+      objectReference: {fileID: 21300000, guid: e92b771ef8a249449bc4ba67c134ac95, type: 3}
     - target: {fileID: 3771883763121782575, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: valPoid
       value: 
@@ -786,6 +830,38 @@ PrefabInstance:
     - target: {fileID: 7724048453207581918, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808070893873268321, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808070893873268321, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808070893873268321, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808070893873268321, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808070893873268321, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373492288048848694, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373492288048848694, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373492288048848694, guid: 47c0b194b45996c40a575cb55e209167, type: 3}
+      propertyPath: m_FillOrigin
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c0b194b45996c40a575cb55e209167, type: 3}

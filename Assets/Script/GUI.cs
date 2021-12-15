@@ -9,6 +9,9 @@ public class GUI : MonoBehaviour
     public Image statBarPoid;
     public Image statBarCharge;
     public Image statBarVitesse;
+    
+    public Sprite BarRG;
+
     public GameObject carousel;
 
     public Text valPoid;
@@ -45,6 +48,19 @@ public class GUI : MonoBehaviour
         POID_MAX = Mission.Objectif_poid;
         CHARGE_MAX = Mission.Objectif_Charge;
         VITESSE_MAX = Mission.Objectif_Vitesse;
+
+        if (Mission.Excedant_poid)
+        {
+            statBarPoid.sprite = BarRG;
+        }
+        if (Mission.Excedant_Charge)
+        {
+            statBarCharge.sprite = BarRG;
+        }
+        if (Mission.Excedant_Vitesse)
+        {
+            statBarVitesse.sprite = BarRG;
+        }
 
         statBarPoid.fillAmount = PoidRatio;
         statBarCharge.fillAmount = Charge;
@@ -83,13 +99,13 @@ public class GUI : MonoBehaviour
 
     private void Update()
     {
-
+        print(Input.mousePosition);
         if (Input.GetMouseButtonDown(0))
         {
             //Debug.Log("1er click");
             InitPos = Input.mousePosition;
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && InitPos.x > 1800)
         {
             //Debug.Log("�a drag");
             CurPos = Input.mousePosition;
