@@ -16,10 +16,12 @@ public class GyroControler : MonoBehaviour
     private Quaternion init;
 
     private float angle;
+    private int screen;
 
     // Start is called before the first frame update
     void Start()
     {
+        screen = Screen.width;
         gyroEnabled = EnableGyro();
     }
 
@@ -77,7 +79,7 @@ public class GyroControler : MonoBehaviour
                 //Debug.Log("1er click");
                 InitPos = Input.mousePosition;
             }
-            if (Input.GetMouseButton(0) && InitPos.x < 1800)
+            if (Input.GetMouseButton(0) && InitPos.x < screen - (screen / 6))
             {
                 //Debug.Log("on drag");
                 CurPos = Input.mousePosition;

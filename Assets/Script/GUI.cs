@@ -39,11 +39,14 @@ public class GUI : MonoBehaviour
     public float CHARGE_MAX;
     public float VITESSE_MAX;
 
+    private int screen;
 
     // Start is called before the first frame update
     void Start()
     {
         PoidRatio = 0f;
+
+        screen = Screen.width;
 
         POID_MAX = Mission.Objectif_poid;
         CHARGE_MAX = Mission.Objectif_Charge;
@@ -105,7 +108,7 @@ public class GUI : MonoBehaviour
             //Debug.Log("1er click");
             InitPos = Input.mousePosition;
         }
-        if (Input.GetMouseButton(0) && InitPos.x > 1800)
+        if (Input.GetMouseButton(0) && InitPos.x > screen - (screen/6))
         {
             //Debug.Log("�a drag");
             CurPos = Input.mousePosition;
