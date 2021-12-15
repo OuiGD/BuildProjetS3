@@ -10,10 +10,15 @@ public class SoundFX : MonoBehaviour
     public AudioSource clangFX;
     public AudioSource clicFX;
     public AudioSource sign;
+    public AudioSource stamp;
 
     public void ClickUI()
     {
         btUI.Play();
+    }
+    public void ValidStamp()
+    {
+        stamp.Play();
     }
     public void SignContract()
     {

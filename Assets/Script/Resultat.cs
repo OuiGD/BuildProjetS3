@@ -11,6 +11,7 @@ public class Resultat : MonoBehaviour
     public Sprite tamponX;
     public Sprite papierV;
     public Sprite papierX;
+    public SoundFX sound;
 
     public static bool poid;
     public static bool charge;
@@ -21,6 +22,7 @@ public class Resultat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sound.ValidStamp();
         if (poid && charge && vitesse)
         {
             papierImg.sprite = papierV;

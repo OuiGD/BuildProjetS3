@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4a1684e13cbe9ed41ac03e8fbc07d98a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b6fb0dabc3b9f7e458202b06fc9876ff, type: 2}
+      objectReference: {fileID: 2100000, guid: 5b85b663758977a4f8ddecb99cc1234c, type: 2}
     - target: {fileID: 919132149155446097, guid: 4a1684e13cbe9ed41ac03e8fbc07d98a, type: 3}
       propertyPath: m_Name
       value: moteur_ww1

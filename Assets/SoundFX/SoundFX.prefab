@@ -50,6 +50,7 @@ MonoBehaviour:
   clangFX: {fileID: 8039866213715248442}
   clicFX: {fileID: 959491836617937986}
   sign: {fileID: 2619607460098163726}
+  stamp: {fileID: 3739128567029851353}
 --- !u!1001 &295781290328314898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,5 +141,10 @@ AudioSource:
 --- !u!82 &3735345457862483719 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4020675854164740885, guid: b6dd5ee65da7f1446a6de67f29675976, type: 3}
+  m_PrefabInstance: {fileID: 295781290328314898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3739128567029851353 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4034906522683027659, guid: b6dd5ee65da7f1446a6de67f29675976, type: 3}
   m_PrefabInstance: {fileID: 295781290328314898}
   m_PrefabAsset: {fileID: 0}

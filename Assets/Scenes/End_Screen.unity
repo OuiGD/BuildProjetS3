@@ -158,6 +158,7 @@ MonoBehaviour:
   tamponX: {fileID: 21300000, guid: 8fef3ea8aee1d244595e0cbd34a6779a, type: 3}
   papierV: {fileID: 21300000, guid: 20174e331a3a69d488e0f5f72cd17eee, type: 3}
   papierX: {fileID: 21300000, guid: 62a1d6598f2f19d4f9f051f8d28f25f9, type: 3}
+  sound: {fileID: 1344963499}
   result: {fileID: 8578946132218941607}
 --- !u!4 &113972343
 Transform:
