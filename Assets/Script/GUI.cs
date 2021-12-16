@@ -68,11 +68,6 @@ public class GUI : MonoBehaviour
         statBarPoid.fillAmount = PoidRatio;
         statBarCharge.fillAmount = Charge;
         statBarVitesse.fillAmount = Vitesse;
-
-        /*Debug.Log("poid max: " + POID_MAX);
-        Debug.Log("charge max: " + CHARGE_MAX);
-        Debug.Log("vitesse max: " + VITESSE_MAX);
-        Debug.Log("************************");*/
     }
 
     public void SelectionWheel(float x, float Axis)

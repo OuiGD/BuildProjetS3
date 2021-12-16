@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pale
   m_EditorClassIdentifier: 
   Name: Elice
-  Poid: 8
+  Poid: 80
   Portance: 1
   Puissance: 5
   Consommation: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Motor
   m_EditorClassIdentifier: 
   Name: engine
-  Poid: 25
+  Poid: 250
   Portance: 0
   Puissance: 14
   Consommation: 7

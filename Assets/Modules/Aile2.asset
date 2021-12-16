@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aile2
   m_EditorClassIdentifier: 
   Name: Aile
-  Poid: 15
+  Poid: 150
   Portance: 2
   Puissance: 0
   Consommation: 0
