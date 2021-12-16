@@ -82,7 +82,7 @@ public class GUI : MonoBehaviour
         Poid += (float)objAjout.Poid;
 
         PoidRatio = Poid * 0.001f;
-        Vitesse = (Puissance - PoidRatio) * (Portance * Mathf.Pow(FACTOR_PORTANCE, 2)) * 10;
+        Vitesse = (Puissance - (PoidRatio - (Portance * Mathf.Pow(FACTOR_PORTANCE, 2)))) * 10;
         Charge = (Portance * FACTOR_PORTANCE) + (Puissance * FACTOR_PUISSANCE) - (PoidRatio * FACTOR_POID);
 
         valPoid.text = Poid.ToString("0");
