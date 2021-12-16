@@ -38,7 +38,7 @@ public class SoundFX : MonoBehaviour
             {
                 clicFX.Play();
             }
-        if (name == "engine")
+        if (name == "Engine")
         {
             engineFX.Play();
         }
